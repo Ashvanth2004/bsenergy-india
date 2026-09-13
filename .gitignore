@@ -1,0 +1,6 @@
+# Server/runtime logs (not part of the site)
+server.log
+server.err.log
+
+# Raw source image exports — not needed; use the sized versions in assets/img
+BS ENERGY INDIA IMAGES/

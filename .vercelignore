@@ -1,0 +1,15 @@
+# Local Vercel state
+.vercel
+
+# Logs from the local dev server
+server.log
+server.err.log
+*.log
+
+# Raw source images (not used by the site)
+BS ENERGY INDIA IMAGES
+
+# Node / misc
+node_modules
+.DS_Store
+Thumbs.db

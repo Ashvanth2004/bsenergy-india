@@ -45,7 +45,7 @@ export default function AboutPage() {
             About BS Energy India
           </h1>
           <p className="text-gray-300 max-w-2xl text-base sm:text-lg font-normal leading-relaxed">
-            Established in 2007, BS Energy India is a premier industrial heating, combustion, energy recovery, and steel fabrication solutions company based in Ahmedabad, Gujarat.
+            Established in 2007, BS Energy India is a premier industrial heating, combustion, energy recovery, and steel fabrication solutions company based in Sholavaram, Chennai, India.
           </p>
 
           <div className="flex flex-wrap items-center gap-6 pt-4 text-xs font-mono text-gray-300">

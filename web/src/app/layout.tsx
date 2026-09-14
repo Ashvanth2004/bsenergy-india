@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "Heat Recovery Systems",
     "Thermal Fluid Heaters",
     "Industrial Chimneys",
-    "Ahmedabad Gujarat Engineering",
+    "Sholavaram Chennai Engineering",
   ],
   authors: [{ name: "BS Energy India" }],
   creator: "BS Energy India",

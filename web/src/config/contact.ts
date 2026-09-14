@@ -11,9 +11,9 @@ export const contactConfig = {
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "+91 99656 62266",
   email: process.env.NEXT_PUBLIC_EMAIL ?? "bsenergyindia@gmail.com",
   formEmail: "bsenergysupportteam.india@gmail.com",
-  address: process.env.NEXT_PUBLIC_ADDRESS ?? "Ahmedabad, Gujarat, India",
-  location: "Ahmedabad, Gujarat, India",
-  contactPerson: "Balamurugan",
+  address: process.env.NEXT_PUBLIC_ADDRESS ?? "Sholavaram, Chennai, Tamil Nadu, India",
+  location: "Sholavaram, Chennai, Tamil Nadu, India",
+  contactPerson: "Ashvanth A",
   instagram: process.env.NEXT_PUBLIC_INSTAGRAM ?? "#",
   facebook: process.env.NEXT_PUBLIC_FACEBOOK ?? "#",
   googleAppsScriptUrl: process.env.NEXT_PUBLIC_GOOGLE_APPS_SCRIPT_URL ?? "https://script.google.com/macros/s/AKfycbxC6L9E-aU5vvPJwdXfzN7lP45RYaaOP0STna--DxZ595JDohDYP2foxgMY1xgq2R6g6w/exec",
@@ -27,7 +27,7 @@ export const companyConfig = {
   yearsExperience: "14+",
   businessType: "Manufacturer & Exporter",
   firmType: "Partnership Firm",
-  location: "Ahmedabad, Gujarat, India",
+  location: "Sholavaram, Chennai, Tamil Nadu, India",
 } as const;
 
 export const whatsappMessages = {

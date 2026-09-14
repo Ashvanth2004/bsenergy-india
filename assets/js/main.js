@@ -16,7 +16,7 @@ var SITE_CONFIG = {
   emailLink: "mailto:bsenergyindia@gmail.com",
   instagram: "#",                   /* real Instagram URL */
   facebook: "#",                    /* real Facebook URL */
-  address: "Ahmedabad, Gujarat, India",
+  address: "Sholavaram, Chennai, Tamil Nadu, India",
   googleAppsScriptUrl: "https://script.google.com/macros/s/AKfycbxC6L9E-aU5vvPJwdXfzN7lP45RYaaOP0STna--DxZ595JDohDYP2foxgMY1xgq2R6g6w/exec"           /* Web App URL deployed from Google Apps Script */
 };
 

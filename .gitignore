@@ -1,8 +1,23 @@
-# Server/runtime logs (not part of the site)
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Next.js build output
+.next/
+**/.next/
+out/
+
+# Server/runtime logs
+*.log
 server.log
 server.err.log
 
-# Raw source image exports — not needed; use the sized versions in assets/img
-BS ENERGY INDIA IMAGES/
-.vercel
+# Environment variables
 .env*
+
+# Vercel & temp folders
+.vercel
+web-stub/
+
+# Raw source image exports
+BS ENERGY INDIA IMAGES/

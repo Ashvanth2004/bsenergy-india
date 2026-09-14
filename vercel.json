@@ -1,7 +1,4 @@
 {
-  "buildCommand": "echo 'Using static site — no build step needed.'",
-  "framework": "static",
-  "installCommand": "echo 'No dependencies to install.'",
-  "outputDirectory": ".",
-  "developmentCommand": "echo 'No dev server configured.'"
+  "framework": "nextjs",
+  "rootDirectory": "web"
 }

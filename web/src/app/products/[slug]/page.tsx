@@ -10,6 +10,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PRODUCTS_DATA, Product } from "@/data/siteData";
 import { buildWhatsAppLink } from "@/config/contact";
+import BackButton from "@/components/BackButton";
 import { ArrowLeft, ArrowRight, CheckCircle2, MessageSquare, ShieldCheck, Flame, Cpu, Zap, Factory, Layers } from "lucide-react";
 
 interface ProductPageProps {
@@ -50,12 +51,15 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
       {/* Hero Breadcrumb Banner */}
       <section className="pt-32 pb-12 bg-gradient-to-b from-[#0F1D30] to-[#0B1624] border-b border-white/10 px-4 lg:px-8">
         <div className="max-w-7xl mx-auto space-y-4">
-          <div className="flex items-center gap-2 text-xs font-mono text-gray-400">
-            <Link href="/" className="hover:text-[#FF6B00] transition-colors">HOME</Link>
-            <span>/</span>
-            <Link href="/products" className="hover:text-[#FF6B00] transition-colors">PRODUCTS</Link>
-            <span>/</span>
-            <span className="text-[#FF6B00] uppercase">{product.name}</span>
+          <div className="flex items-center justify-between gap-4 flex-wrap">
+            <div className="flex items-center gap-2 text-xs font-mono text-gray-400">
+              <Link href="/" className="hover:text-[#FF6B00] transition-colors">HOME</Link>
+              <span>/</span>
+              <Link href="/products" className="hover:text-[#FF6B00] transition-colors">PRODUCTS</Link>
+              <span>/</span>
+              <span className="text-[#FF6B00] uppercase">{product.name}</span>
+            </div>
+            <BackButton fallbackHref="/products" />
           </div>
 
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
@@ -65,14 +69,6 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
                 {product.name}
               </h1>
             </div>
-
-            <Link
-              href="/products"
-              className="inline-flex items-center gap-2 text-xs font-mono text-gray-400 hover:text-[#FF6B00] transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span>BACK TO PRODUCTS</span>
-            </Link>
           </div>
         </div>
       </section>
@@ -104,7 +100,7 @@ export default function ProductDetailPage({ params }: ProductPageProps) {
             <div className="bg-[#0F1D30]/60 border border-white/10 p-6 rounded-sm space-y-3 font-mono text-xs text-gray-300">
               <div className="flex items-center justify-between border-b border-white/5 pb-2">
                 <span>ESTABLISHED FABRICATION</span>
-                <span className="text-white font-bold">AHMEDABAD, GUJARAT</span>
+                <span className="text-white font-bold">SHOLAVARAM, CHENNAI</span>
               </div>
               <div className="flex items-center justify-between border-b border-white/5 pb-2">
                 <span>COMPLIANCE STANDARD</span>

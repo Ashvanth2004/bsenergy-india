@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { X, Send, MessageSquare, CheckCircle2 } from "lucide-react";
-import { buildWhatsAppLink } from "@/config/contact";
+import { buildWhatsAppLink, contactConfig } from "@/config/contact";
 
 const quoteFormSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -60,8 +60,32 @@ export default function QuoteModal({ isOpen, onClose, initialProduct }: QuoteMod
     "Other",
   ];
 
-  const onSubmitForm = (data: QuoteFormData) => {
-    setIsSubmitted(true);
+  const onSubmitForm = async (data: QuoteFormData) => {
+    const payload = {
+      timestamp: new Date().toISOString(),
+      fullName: data.name.trim(),
+      companyName: data.company.trim(),
+      email: data.email.trim(),
+      phone: data.phone.trim(),
+      requirement: `${data.product} (${data.quantity} - ${data.industry})`,
+      message: data.requirement.trim(),
+    };
+
+    try {
+      const endpoint = contactConfig.googleAppsScriptUrl;
+      if (endpoint && endpoint.startsWith("http")) {
+        await fetch(endpoint, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+      }
+    } catch (err) {
+      console.error("Error submitting to Google Apps Script:", err);
+    } finally {
+      setIsSubmitted(true);
+    }
   };
 
   // Pre-fill WhatsApp message with structured form values

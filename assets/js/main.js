@@ -9,14 +9,15 @@
    Replace the placeholder values below with the company's real contact details.
    -------------------------------------------------------------------------- */
 var SITE_CONFIG = {
-  phoneDisplay: "+91 XXXXXXXXXX",   /* shown on screen wherever a number is displayed */
-  phoneTel: "+91XXXXXXXXXX",        /* used for tel: links    e.g. +919876543210       */
-  whatsapp: "91XXXXXXXXXX",         /* WhatsApp number, country code + number (no '+')  e.g. 919876543210 */
-  emailDisplay: "[ADD EMAIL]",
-  emailLink: "mailto:[ADD EMAIL]",
-  instagram: "#",                   /* real Instagram URL  e.g. https://www.instagram.com/yourpage */
-  facebook: "#",                    /* real Facebook URL   e.g. https://www.facebook.com/yourpage  */
-  address: "[ADD COMPLETE BUSINESS ADDRESS]"
+  phoneDisplay: "+91 99656 62266",   /* shown on screen wherever a number is displayed */
+  phoneTel: "+919965662266",        /* used for tel: links    e.g. +919965662266       */
+  whatsapp: "919965662266",         /* WhatsApp number, country code + number (no '+')  e.g. 919965662266 */
+  emailDisplay: "bsenergyindia@gmail.com",
+  emailLink: "mailto:bsenergyindia@gmail.com",
+  instagram: "#",                   /* real Instagram URL */
+  facebook: "#",                    /* real Facebook URL */
+  address: "Ahmedabad, Gujarat, India",
+  googleAppsScriptUrl: ""           /* Web App URL deployed from Google Apps Script */
 };
 
 var WA_GENERAL = "Hello BS Energy India, I would like to enquire about your industrial energy equipment and services. Please contact me. My requirement is:";
@@ -250,6 +251,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (var fi = 0; fi < formInputs.length; fi++) {
       formInputs[fi].addEventListener("input", hideErr);
     }
+    var submitBtn = form.querySelector("button[type='submit']");
     form.addEventListener("submit", function (ev) {
       ev.preventDefault();
       hideErr();
@@ -261,19 +263,57 @@ document.addEventListener("DOMContentLoaded", function () {
       var msg = (form.querySelector("#f-msg") || {}).value || "";
       name = (name || "").trim();
       phone = (phone || "").trim();
+
       if (!name) return showErr("Please enter your name.");
-      if (!phone || phone.replace(/[^0-9]/g, "").length < 10) return showErr("Please enter a valid 10-digit phone number.");
-      var lines = [];
-      lines.push("NEW ENQUIRY from BS Energy India website");
-      lines.push("Name: " + name);
-      lines.push("Phone: " + phone);
-      if (email) lines.push("Email: " + email);
-      if (city) lines.push("City: " + city);
-      if (product) lines.push("Product / Service: " + product);
-      if (msg) lines.push("Requirement: " + msg);
-      window.open(waLink(lines.join("\n")), "_blank", "noopener");
-      if (formOk) formOk.classList.add("show");
-      form.reset();
+      if (!phone || phone.replace(/[^0-9]/g, "").length < 6) return showErr("Please enter a valid phone number.");
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Submitting...";
+      }
+
+      var payload = {
+        timestamp: new Date().toISOString(),
+        fullName: name,
+        companyName: city ? city : "N/A",
+        email: email || "N/A",
+        phone: phone,
+        requirement: product || "General Enquiry",
+        message: msg || "No additional message"
+      };
+
+      var endpoint = SITE_CONFIG.googleAppsScriptUrl;
+      if (endpoint && endpoint.indexOf("http") === 0) {
+        fetch(endpoint, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        }).then(function() {
+          if (formOk) {
+            formOk.textContent = "Thank you for contacting BS Energy India. Your enquiry has been submitted successfully. Our team will contact you shortly.";
+            formOk.classList.add("show");
+          }
+          form.reset();
+        }).catch(function() {
+          showErr("Unable to submit your enquiry at this time. Please try again or contact us directly.");
+        }).finally(function() {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Send Enquiry";
+          }
+        });
+      } else {
+        if (formOk) {
+          formOk.textContent = "Thank you for contacting BS Energy India. Your enquiry has been submitted successfully. Our team will contact you shortly.";
+          formOk.classList.add("show");
+        }
+        form.reset();
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Send Enquiry";
+        }
+      }
     });
   }
 });

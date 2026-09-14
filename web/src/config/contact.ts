@@ -15,6 +15,7 @@ export const contactConfig = {
   contactPerson: "Balamurugan",
   instagram: process.env.NEXT_PUBLIC_INSTAGRAM ?? "#",
   facebook: process.env.NEXT_PUBLIC_FACEBOOK ?? "#",
+  googleAppsScriptUrl: process.env.NEXT_PUBLIC_GOOGLE_APPS_SCRIPT_URL ?? "",
 } as const;
 
 export const companyConfig = {

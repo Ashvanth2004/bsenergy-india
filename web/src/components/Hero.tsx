@@ -13,6 +13,18 @@ interface HeroProps {
 
 const HERO_SLIDES = [
   {
+    src: "/images/Heat Recovery Systems.jpg",
+    title: "INDUSTRIAL HEAT RECOVERY SYSTEMS",
+    subtitle: "Waste Heat Recovery Units & Economizers Engineered for Maximum Fuel Consumption Savings",
+    tag: "ENERGY RECOVERY"
+  },
+  {
+    src: "/images/Thermal Fluid Heaters.jpeg",
+    title: "THERMAL FLUID HEATER SYSTEMS",
+    subtitle: "High-Temperature Thermic Oil Heating Systems Operating at Atmospheric Pressure",
+    tag: "THERMIC HEATING"
+  },
+  {
     src: "/images/Hot Water Generator.png",
     title: "HEAVY-DUTY HOT WATER GENERATORS",
     subtitle: "High-Efficiency Thermal Heating Units Engineered for Industrial Process & Commercial Applications",

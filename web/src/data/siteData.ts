@@ -138,7 +138,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: "Heat Recovery Systems",
     shortDescription: "Energy-saving waste heat recovery units designed to capture thermal energy from exhaust gases.",
     fullDescription: "Advanced Heat Recovery Systems (Economizers & Waste Heat Boilers) engineered to capture waste thermal energy from stack exhaust gases and redirect it into preheating boiler feedwater or process air, dramatically reducing fuel consumption.",
-    hasSuppliedImage: false,
+    image: "/images/Heat Recovery Systems.jpg",
+    hasSuppliedImage: true,
     whatsappMessage: "Hello BS Energy India, I am interested in Heat Recovery Systems. Please contact me regarding my requirement.",
     features: [
       "Substantial fuel consumption savings",
@@ -155,7 +156,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: "Thermal Fluid Heaters",
     shortDescription: "High-temperature fluid heating systems delivering precise heat without high pressure.",
     fullDescription: "Thermal Fluid Heaters (Thermic Fluid Systems) designed to provide uniform high-temperature process heat at atmospheric pressures, eliminating the safety and regulation overhead of high-pressure steam boilers.",
-    hasSuppliedImage: false,
+    image: "/images/Thermal Fluid Heaters.jpeg",
+    hasSuppliedImage: true,
     whatsappMessage: "Hello BS Energy India, I am interested in Thermal Fluid Heaters. Please contact me regarding my requirement.",
     features: [
       "High temperature capability up to 300°C+",
@@ -230,6 +232,20 @@ export const BRANDS_DATA: BrandItem[] = [
 ];
 
 export const GALLERY_DATA: GalleryItem[] = [
+  {
+    id: "gal-hrs",
+    title: "Industrial Heat Recovery System (Economizer Unit)",
+    category: "PRODUCTS",
+    image: "/images/Heat Recovery Systems.jpg",
+    description: "Energy-saving waste heat recovery unit engineered to capture thermal energy from exhaust stack gases."
+  },
+  {
+    id: "gal-tfh",
+    title: "High-Temperature Thermal Fluid Heater System",
+    category: "PRODUCTS",
+    image: "/images/Thermal Fluid Heaters.jpeg",
+    description: "Closed-loop thermic oil fluid heating system delivering uniform process heat up to 300°C+."
+  },
   {
     id: "gal-hwg",
     title: "Heavy-Duty Industrial Hot Water Generator Unit",

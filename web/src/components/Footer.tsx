@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MessageSquare, Mail, MapPin, ArrowUpRight, Shield } from "lucide-react";
 import { contactConfig, companyConfig, buildWhatsAppLink, buildPhoneLink } from "@/config/contact";
 import { whatsappMessages } from "@/config/contact";
@@ -15,15 +16,21 @@ export default function Footer() {
           {/* Col 1: Brand Info (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
             <Link href="/" className="group inline-flex items-center gap-3">
-              <div className="w-9 h-9 bg-[#FF6B00] flex items-center justify-center font-black text-black text-lg rounded-sm">
-                BS
+              <div className="relative w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 p-1 group-hover:border-[#FF6B00]/60 transition-all duration-300 shadow-[0_0_15px_rgba(255,107,0,0.25)]">
+                <Image
+                  src="/images/logo.png"
+                  alt="BS Energy India Logo"
+                  width={40}
+                  height={40}
+                  className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <div className="flex flex-col">
                 <span className="text-white font-black tracking-widest text-base leading-tight uppercase">
                   {companyConfig.nameShort}
                 </span>
                 <span className="text-[#FF6B00] text-[9px] font-mono tracking-[0.2em] uppercase font-bold">
-                  EQUIPMENTS
+                  INDIA
                 </span>
               </div>
             </Link>

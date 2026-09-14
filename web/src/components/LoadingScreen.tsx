@@ -47,13 +47,14 @@ export default function LoadingScreen() {
       <div className="relative z-10 flex flex-col items-center justify-center space-y-6 text-center max-w-md">
         
         {/* Brand Emblem */}
-        <div className="w-16 h-16 relative bg-[#0F1D30] border border-[#FF6B00]/40 rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(255,107,0,0.3)]">
+        <div className="w-24 h-24 relative bg-[#0F1D30]/80 border-2 border-[#FF6B00]/50 rounded-2xl flex items-center justify-center p-3 shadow-[0_0_35px_rgba(255,107,0,0.35)] backdrop-blur-md">
           <Image
-            src="/images/BS_ENERGY_INDIA_3D_LOGO.jpg"
+            src="/images/logo.png"
             alt="BS Energy India Logo"
-            width={48}
-            height={48}
-            className="object-contain rounded-full"
+            width={80}
+            height={80}
+            className="object-contain w-full h-full drop-shadow-[0_0_10px_rgba(255,107,0,0.5)]"
+            priority
           />
         </div>
 

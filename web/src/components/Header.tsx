@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MessageSquare, Menu, X, ArrowUpRight, Shield } from "lucide-react";
 import { contactConfig, companyConfig, buildWhatsAppLink, buildPhoneLink } from "@/config/contact";
 import { cn } from "@/lib/utils";
@@ -49,10 +50,17 @@ export default function Header({ onOpenQuoteModal }: HeaderProps) {
         )}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          {/* Left: Professional Text-Based Logo */}
+          {/* Left: Official Brand Logo */}
           <Link href="/" className="group flex items-center gap-3">
-            <div className="w-10 h-10 bg-[#FF6B00] flex items-center justify-center font-black text-black tracking-tighter text-xl rounded-sm group-hover:bg-white transition-colors duration-200 shadow-[0_0_15px_rgba(255,107,0,0.4)]">
-              BS
+            <div className="relative w-11 h-11 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 p-1 group-hover:border-[#FF6B00]/60 transition-all duration-300 shadow-[0_0_15px_rgba(255,107,0,0.25)]">
+              <Image
+                src="/images/logo.png"
+                alt="BS Energy India Logo"
+                width={44}
+                height={44}
+                className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-300"
+                priority
+              />
             </div>
             <div className="flex flex-col">
               <span className="text-white font-black tracking-widest text-lg leading-tight uppercase group-hover:text-[#FF6B00] transition-colors">

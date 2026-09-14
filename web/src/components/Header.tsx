@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Phone, MessageSquare, Menu, X, ArrowUpRight, Shield } from "lucide-react";
 import { contactConfig, companyConfig, buildWhatsAppLink, buildPhoneLink } from "@/config/contact";
 import { cn } from "@/lib/utils";
@@ -14,6 +15,7 @@ interface HeaderProps {
 export default function Header({ onOpenQuoteModal }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +29,13 @@ export default function Header({ onOpenQuoteModal }: HeaderProps) {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleHomeClick = (e: React.MouseEvent) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   const navItems = [
     { name: "HOME", href: "/" },
@@ -51,7 +60,7 @@ export default function Header({ onOpenQuoteModal }: HeaderProps) {
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Left: Official Brand Logo */}
-          <Link href="/" className="group flex items-center gap-3">
+          <Link href="/" onClick={handleHomeClick} className="group flex items-center gap-3">
             <div className="relative w-11 h-11 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 p-1 group-hover:border-[#FF6B00]/60 transition-all duration-300 shadow-[0_0_15px_rgba(255,107,0,0.25)]">
               <Image
                 src="/images/logo.png"
@@ -78,7 +87,11 @@ export default function Header({ onOpenQuoteModal }: HeaderProps) {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-xs font-mono tracking-wider font-semibold text-gray-300 hover:text-[#FF6B00] transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#FF6B00] hover:after:w-full after:transition-all after:duration-200"
+                onClick={item.href === "/" ? handleHomeClick : undefined}
+                className={cn(
+                  "text-xs font-mono tracking-wider font-semibold transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#FF6B00] hover:after:w-full after:transition-all after:duration-200",
+                  pathname === item.href ? "text-[#FF6B00] after:w-full" : "text-gray-300 hover:text-[#FF6B00]"
+                )}
               >
                 {item.name}
               </Link>
@@ -149,8 +162,14 @@ export default function Header({ onOpenQuoteModal }: HeaderProps) {
               <Link
                 key={item.name}
                 href={item.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-lg font-bold tracking-wider text-gray-200 hover:text-[#FF6B00] transition-colors py-1 flex items-center justify-between border-b border-white/5"
+                onClick={(e) => {
+                  setMobileMenuOpen(false);
+                  if (item.href === "/") handleHomeClick(e);
+                }}
+                className={cn(
+                  "text-lg font-bold tracking-wider transition-colors py-1 flex items-center justify-between border-b border-white/5",
+                  pathname === item.href ? "text-[#FF6B00]" : "text-gray-200 hover:text-[#FF6B00]"
+                )}
               >
                 <span>{item.name}</span>
                 <span className="text-xs font-mono text-gray-500">→</span>

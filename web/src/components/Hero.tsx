@@ -167,7 +167,7 @@ export default function Hero({ onOpenQuoteModal }: HeroProps) {
   };
 
   return (
-    <section className="relative min-h-screen bg-[#0B1624] overflow-hidden flex flex-col justify-between pt-28 pb-12 px-4 lg:px-8 border-b border-white/10">
+    <section id="home" className="relative min-h-screen bg-[#0B1624] overflow-hidden flex flex-col justify-between pt-28 pb-12 px-4 lg:px-8 border-b border-white/10">
       {/* Background Video */}
       <video
         autoPlay

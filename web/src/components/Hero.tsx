@@ -333,7 +333,7 @@ export default function Hero({ onOpenQuoteModal }: HeroProps) {
           <div className="relative mt-4 w-full flex flex-wrap gap-2 lg:gap-3 justify-center z-20 px-2">
             
             <Link
-              href="#products"
+              href="/products/industrial-burners"
               className="bg-[#0F1D30]/90 hover:bg-[#FF6B00] backdrop-blur-md border border-white/10 hover:border-[#FF6B00] px-4 py-2.5 rounded-sm text-left transition-all duration-200 group shadow-lg flex items-center gap-3"
             >
               <Flame className="w-4 h-4 text-[#FF6B00] group-hover:text-black" />
@@ -346,7 +346,7 @@ export default function Hero({ onOpenQuoteModal }: HeroProps) {
             </Link>
 
             <Link
-              href="#services"
+              href="/services"
               className="bg-[#0F1D30]/90 hover:bg-[#FF6B00] backdrop-blur-md border border-white/10 hover:border-[#FF6B00] px-4 py-2.5 rounded-sm text-left transition-all duration-200 group shadow-lg flex items-center gap-3"
             >
               <Activity className="w-4 h-4 text-[#FF6B00] group-hover:text-black" />
@@ -359,7 +359,7 @@ export default function Hero({ onOpenQuoteModal }: HeroProps) {
             </Link>
 
             <Link
-              href="#services"
+              href="/services"
               className="bg-[#0F1D30]/90 hover:bg-[#FF6B00] backdrop-blur-md border border-white/10 hover:border-[#FF6B00] px-4 py-2.5 rounded-sm text-left transition-all duration-200 group shadow-lg flex items-center gap-3"
             >
               <Settings className="w-4 h-4 text-[#FF6B00] group-hover:text-black" />

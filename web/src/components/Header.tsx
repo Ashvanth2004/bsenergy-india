@@ -29,13 +29,13 @@ export default function Header({ onOpenQuoteModal }: HeaderProps) {
 
   const navItems = [
     { name: "HOME", href: "/" },
-    { name: "ABOUT", href: "/#about" },
-    { name: "PRODUCTS", href: "/#products" },
-    { name: "SERVICES", href: "/#services" },
-    { name: "INDUSTRIES", href: "/#industries" },
-    { name: "PROJECTS", href: "/#projects" },
-    { name: "GALLERY", href: "/#gallery" },
-    { name: "CONTACT", href: "/#contact" },
+    { name: "ABOUT", href: "/about" },
+    { name: "PRODUCTS", href: "/products" },
+    { name: "SERVICES", href: "/services" },
+    { name: "INDUSTRIES", href: "/industries" },
+    { name: "PROJECTS", href: "/projects" },
+    { name: "GALLERY", href: "/gallery" },
+    { name: "CONTACT", href: "/contact" },
   ];
 
   return (

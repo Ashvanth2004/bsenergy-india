@@ -50,13 +50,13 @@ export default function Footer() {
             </div>
             <ul className="space-y-2 text-xs font-mono">
               <li><Link href="/" className="hover:text-white transition-colors">HOME</Link></li>
-              <li><Link href="/#about" className="hover:text-white transition-colors">ABOUT US</Link></li>
-              <li><Link href="/#products" className="hover:text-white transition-colors">PRODUCTS</Link></li>
-              <li><Link href="/#services" className="hover:text-white transition-colors">SERVICES</Link></li>
-              <li><Link href="/#industries" className="hover:text-white transition-colors">INDUSTRIES</Link></li>
-              <li><Link href="/#projects" className="hover:text-white transition-colors">PROJECTS</Link></li>
-              <li><Link href="/#gallery" className="hover:text-white transition-colors">GALLERY</Link></li>
-              <li><Link href="/#contact" className="hover:text-white transition-colors">CONTACT</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">ABOUT US</Link></li>
+              <li><Link href="/products" className="hover:text-white transition-colors">PRODUCTS</Link></li>
+              <li><Link href="/services" className="hover:text-white transition-colors">SERVICES</Link></li>
+              <li><Link href="/industries" className="hover:text-white transition-colors">INDUSTRIES</Link></li>
+              <li><Link href="/projects" className="hover:text-white transition-colors">PROJECTS</Link></li>
+              <li><Link href="/gallery" className="hover:text-white transition-colors">GALLERY</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">CONTACT</Link></li>
             </ul>
           </div>
 
@@ -66,13 +66,13 @@ export default function Footer() {
               EQUIPMENT CATALOG
             </div>
             <ul className="space-y-2 text-xs font-mono">
-              <li><Link href="/#products" className="hover:text-[#FF6B00] transition-colors">Industrial Burners</Link></li>
-              <li><Link href="/#products" className="hover:text-[#FF6B00] transition-colors">Burner Controllers</Link></li>
-              <li><Link href="/#products" className="hover:text-[#FF6B00] transition-colors">Industrial Pipelines</Link></li>
-              <li><Link href="/#products" className="hover:text-[#FF6B00] transition-colors">Industrial Chimneys</Link></li>
-              <li><Link href="/#products" className="hover:text-[#FF6B00] transition-colors">Hot Water Generators</Link></li>
-              <li><Link href="/#products" className="hover:text-[#FF6B00] transition-colors">Heat Recovery Systems</Link></li>
-              <li><Link href="/#products" className="hover:text-[#FF6B00] transition-colors">Thermal Fluid Heaters</Link></li>
+              <li><Link href="/products/industrial-burners" className="hover:text-[#FF6B00] transition-colors">Industrial Burners</Link></li>
+              <li><Link href="/products/burner-controllers" className="hover:text-[#FF6B00] transition-colors">Burner Controllers</Link></li>
+              <li><Link href="/products/industrial-pipelines" className="hover:text-[#FF6B00] transition-colors">Industrial Pipelines</Link></li>
+              <li><Link href="/products/industrial-chimneys" className="hover:text-[#FF6B00] transition-colors">Industrial Chimneys</Link></li>
+              <li><Link href="/products/hot-water-generators" className="hover:text-[#FF6B00] transition-colors">Hot Water Generators</Link></li>
+              <li><Link href="/products/heat-recovery-systems" className="hover:text-[#FF6B00] transition-colors">Heat Recovery Systems</Link></li>
+              <li><Link href="/products/thermal-fluid-heaters" className="hover:text-[#FF6B00] transition-colors">Thermal Fluid Heaters</Link></li>
             </ul>
           </div>
 

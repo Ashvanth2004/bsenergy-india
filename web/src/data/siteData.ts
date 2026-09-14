@@ -243,77 +243,133 @@ export const GALLERY_DATA: GalleryItem[] = [
   },
   {
     id: "gal-3",
+    title: "Precision Rigging & Wall Panel Hoist",
+    category: "EQUIPMENT",
+    image: "/images/project-crane-rigger-install.jpg",
+    description: "Mobile crane operator and rigger team positioning vertical steel silo wall panel."
+  },
+  {
+    id: "gal-4",
+    title: "High-Altitude Beam Structural Welding",
+    category: "PROJECTS",
+    image: "/images/project-overhead-beam-welding.jpg",
+    description: "High-altitude precision structural welding on heavy steel framework for plant roof."
+  },
+  {
+    id: "gal-5",
     title: "Heavy Equipment Crane Lift & Placement",
     category: "EQUIPMENT",
     image: "/images/project-crane-fan-lift.jpg",
     description: "Dual crane lifting and precision positioning of a heavy industrial blower fan unit."
   },
   {
-    id: "gal-4",
-    title: "Heavy Steel Storage Tanks Layout",
+    id: "gal-6",
+    title: "Mobile Crane Heavy Wall Section Erection",
+    category: "EQUIPMENT",
+    image: "/images/project-crane-wall-erection-wide.jpg",
+    description: "Indo Power heavy mobile crane placing steel silo wall section onto site foundation."
+  },
+  {
+    id: "gal-7",
+    title: "Overhead Structural Roof Truss Framework",
+    category: "PROJECTS",
+    image: "/images/project-roof-truss-framework.jpg",
+    description: "High-span structural steel roof truss and overhead crane runway girders."
+  },
+  {
+    id: "gal-8",
+    title: "Mobile Crane Plate Positioning",
+    category: "EQUIPMENT",
+    image: "/images/project-crane-plate-positioning.jpg",
+    description: "Precision mobile crane operation aligning and positioning industrial silo wall panels."
+  },
+  {
+    id: "gal-9",
+    title: "Dual Heavy Steel Storage Tanks & Stack",
     category: "PROJECTS",
     image: "/images/project-steel-tanks-layout.jpg",
     description: "Parallel heavy industrial steel storage tanks and exhaust stack scaffold structure."
   },
   {
-    id: "gal-5",
+    id: "gal-10",
+    title: "Multi-Section Silo Wall Plate Array",
+    category: "PROJECTS",
+    image: "/images/project-silo-wall-array.jpg",
+    description: "Heavy fabricated steel plate silo wall row installed on site foundation."
+  },
+  {
+    id: "gal-11",
     title: "Structural Steel Column Array",
     category: "PROJECTS",
     image: "/images/project-site-columns.jpg",
     description: "Precision-aligned heavy structural steel columns for industrial facility expansion."
   },
   {
-    id: "gal-6",
+    id: "gal-12",
+    title: "Vertical Silo Plate Enclosure & Stack",
+    category: "PROJECTS",
+    image: "/images/project-vertical-plate-stack.jpg",
+    description: "Structural steel plate enclosure and exhaust stack scaffold integration."
+  },
+  {
+    id: "gal-13",
     title: "24/7 Nighttime Crane Erection",
     category: "PROJECTS",
     image: "/images/project-night-girder-install.jpg",
     description: "Continuous nighttime high-altitude girder erection using heavy mobile cranes."
   },
   {
-    id: "gal-7",
-    title: "Heavy Steel Wall Panel Hoist",
+    id: "gal-14",
+    title: "I-Beam Framework Fabrication Yard",
+    category: "EQUIPMENT",
+    image: "/images/project-ibeam-fabrication-yard.jpg",
+    description: "Heavy structural steel beams stacked and prepared in assembly yard."
+  },
+  {
+    id: "gal-15",
+    title: "High-Capacity Heavy Crane Hoist",
     category: "EQUIPMENT",
     image: "/images/project-crane-steel-panel.jpg",
     description: "Precision crane operation hoisting and placing heavy fabricated steel wall panels."
   },
   {
-    id: "gal-8",
-    title: "Heavy Industrial Silo Structure",
+    id: "gal-16",
+    title: "Multi-Story Industrial Silo Structure",
     category: "PROJECTS",
     image: "/images/project-heavy-steel-structure.jpg",
     description: "Multi-story heavy plate silo fabrication and structural framework installation."
   },
   {
-    id: "gal-9",
+    id: "gal-17",
     title: "Turnkey Plant Site Development",
     category: "PROJECTS",
     image: "/images/project-plant-site-aerial.jpg",
     description: "Wide aerial perspective of industrial plant layout, foundations, and utility installations."
   },
   {
-    id: "gal-10",
+    id: "gal-18",
     title: "Overhead Steel Truss Beam Erection",
     category: "PROJECTS",
     image: "/images/project-crane-truss-lift.jpg",
     description: "Precision crane operation placing long-span steel truss for industrial plant infrastructure."
   },
   {
-    id: "gal-11",
-    title: "Industrial Burner Unit",
+    id: "gal-19",
+    title: "High-Efficiency Industrial Burner Unit",
     category: "PRODUCTS",
     image: "/images/Industrial Burner.png",
     description: "High-efficiency industrial burner assembly engineered for reliable combustion performance."
   },
   {
-    id: "gal-12",
-    title: "Burner Control Module",
+    id: "gal-20",
+    title: "Automated Burner Control Module",
     category: "CONTROLS",
     image: "/images/Burner Controller.png",
     description: "Automated burner sequence controller for safe ignition monitoring and system interlocks."
   },
   {
-    id: "gal-13",
-    title: "High-Pressure Industrial Pipeline",
+    id: "gal-21",
+    title: "High-Pressure Process Pipeline Infrastructure",
     category: "PIPELINE",
     image: "/images/Industrial Pipeline.png",
     description: "Precision fabricated industrial pipeline manifold for high-pressure process fluid distribution."

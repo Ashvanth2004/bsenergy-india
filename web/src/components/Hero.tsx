@@ -13,6 +13,24 @@ interface HeroProps {
 
 const HERO_SLIDES = [
   {
+    src: "/images/Steam Boilers.png",
+    title: "HIGH-EFFICIENCY STEAM BOILERS",
+    subtitle: "Dependable Industrial Steam Generation Boilers Engineered for Process Heating & Utilities",
+    tag: "STEAM GENERATION"
+  },
+  {
+    src: "/images/Pressure Reducing Systems.png",
+    title: "PRESSURE REDUCING SYSTEMS (PRS)",
+    subtitle: "Precision Steam & Gas Pressure Reduction Skid Stations for Safe Process Line Feed",
+    tag: "PRESSURE REGULATION"
+  },
+  {
+    src: "/images/custom Storage Tanks.png",
+    title: "INDUSTRIAL STORAGE & PROCESS TANKS",
+    subtitle: "Custom Fabricators of Fuel, Chemical, Hot Water Storage Tanks & Pressure Receivers",
+    tag: "TANK FABRICATION"
+  },
+  {
     src: "/images/Heat Recovery Systems.jpg",
     title: "INDUSTRIAL HEAT RECOVERY SYSTEMS",
     subtitle: "Waste Heat Recovery Units & Economizers Engineered for Maximum Fuel Consumption Savings",

@@ -174,7 +174,7 @@ export const PRODUCTS_DATA: Product[] = [
     name: "Steam Boilers",
     shortDescription: "High-efficiency steam generation boilers engineered for process heating and industrial utilities.",
     fullDescription: "Industrial Steam Boilers engineered for dependable, continuous steam generation across manufacturing, chemical processing, textile processing, and food production facilities. Designed for optimum heat transfer, rapid steam raising, and seamless compatibility with all major burner brands.",
-    image: "/images/project-steel-tanks-layout.jpg",
+    image: "/images/Steam Boilers.png",
     hasSuppliedImage: true,
     whatsappMessage: "Hello BS Energy India, I am interested in Steam Boilers. Please share technical options and quotation details. My requirement is:",
     features: [
@@ -192,7 +192,7 @@ export const PRODUCTS_DATA: Product[] = [
     name: "Pressure Reducing Systems (PRS)",
     shortDescription: "Precision steam and gas pressure reduction stations for safe, steady line distribution.",
     fullDescription: "Custom-engineered Pressure Reducing Systems (PRS / PRDS) designed to reduce high-pressure steam or gas utility lines down to precise, stable operating process pressures with automated safety shut-off valves and moisture separation.",
-    image: "/images/Industrial Pipeline.png",
+    image: "/images/Pressure Reducing Systems.png",
     hasSuppliedImage: true,
     whatsappMessage: "Hello BS Energy India, I am interested in Pressure Reducing Systems (PRS). Please contact me regarding my requirement.",
     features: [
@@ -228,7 +228,7 @@ export const PRODUCTS_DATA: Product[] = [
     name: "Industrial Storage & Process Tanks",
     shortDescription: "Manufacturers of all types of industrial storage tanks, pressure receivers, and process vessels.",
     fullDescription: "Custom manufactured industrial tanks including fuel oil storage tanks, hot water storage tanks, chemical process receivers, surge vessels, and heavy-duty carbon/stainless steel tanks fabricated to exact engineering drawings.",
-    image: "/images/project-steel-tanks-layout.jpg",
+    image: "/images/custom Storage Tanks.png",
     hasSuppliedImage: true,
     whatsappMessage: "Hello BS Energy India, I am interested in Industrial Tanks fabrication. Please contact me regarding my requirement.",
     features: [

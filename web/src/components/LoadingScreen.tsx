@@ -14,22 +14,22 @@ export default function LoadingScreen() {
   useEffect(() => {
     if (!isInitialSiteLoad) return;
 
-    // Lock scroll during 2s loading
+    // Lock scroll during 1.5s loading
     document.body.style.overflow = "hidden";
 
-    const totalDuration = 2000; // 2 seconds
+    const totalDuration = 1500; // 1.5 seconds
 
-    // Fade out after 2 seconds
+    // Fade out after 1.5 seconds
     const finishTimeout = setTimeout(() => {
       setIsFinished(true);
     }, totalDuration);
 
-    // Hide completely after fade-out transition (2000ms + 500ms)
+    // Hide completely after fade-out transition (1500ms + 400ms)
     const hideTimeout = setTimeout(() => {
       setIsHidden(true);
       isInitialSiteLoad = false;
       document.body.style.overflow = "auto";
-    }, totalDuration + 500);
+    }, totalDuration + 400);
 
     return () => {
       clearTimeout(finishTimeout);

@@ -335,6 +335,34 @@ export const BRANDS_DATA: BrandItem[] = [
 
 export const GALLERY_DATA: GalleryItem[] = [
   {
+    id: "gal-sb",
+    title: "High-Efficiency Industrial Steam Boiler Package",
+    category: "PRODUCTS",
+    image: "/images/Steam Boilers.png",
+    description: "Industrial Steam Boiler package with integrated blue-flame burner system and automated digital control panel."
+  },
+  {
+    id: "gal-prs",
+    title: "Skid-Mounted Steam Pressure Reducing System (PRS)",
+    category: "EQUIPMENT",
+    image: "/images/Pressure Reducing Systems.png",
+    description: "Skid-mounted pressure reduction station with PRV control valve, pressure gauges, and isolation manifolds."
+  },
+  {
+    id: "gal-tanks",
+    title: "Custom Industrial Fuel & Chemical Storage Tanks",
+    category: "PRODUCTS",
+    image: "/images/custom Storage Tanks.png",
+    description: "Heavy carbon and stainless steel industrial storage tanks fabricated for fuel oil and process chemical storage."
+  },
+  {
+    id: "gal-logo3d",
+    title: "BS Energy India Official Emblem",
+    category: "PRODUCTS",
+    image: "/images/BS_ENERGY_INDIA_3D_LOGO.jpg",
+    description: "Official 3D metallic brand emblem of BS Energy India."
+  },
+  {
     id: "gal-hrs",
     title: "Industrial Heat Recovery System (Economizer Unit)",
     category: "PRODUCTS",

@@ -166,39 +166,141 @@ export const PRODUCTS_DATA: Product[] = [
       "Multi-pass coil configuration for maximum heat transfer"
     ],
     applications: ["Plastic Molding", "Chemical Reactors", "Lamination & Textile Drying", "Bitumen & Oil Heating"]
+  },
+  {
+    id: "steam-boilers",
+    slug: "steam-boilers",
+    number: "08",
+    name: "Steam Boilers",
+    shortDescription: "High-efficiency steam generation boilers engineered for process heating and industrial utilities.",
+    fullDescription: "Industrial Steam Boilers engineered for dependable, continuous steam generation across manufacturing, chemical processing, textile processing, and food production facilities. Designed for optimum heat transfer, rapid steam raising, and seamless compatibility with all major burner brands.",
+    image: "/images/project-steel-tanks-layout.jpg",
+    hasSuppliedImage: true,
+    whatsappMessage: "Hello BS Energy India, I am interested in Steam Boilers. Please share technical options and quotation details. My requirement is:",
+    features: [
+      "High thermal efficiency and rapid steam generation",
+      "Compatible with oil, gas, and dual-fuel burner systems",
+      "Heavy-duty pressure vessel built to boiler standards",
+      "Automated safety interlocks and pressure management"
+    ],
+    applications: ["Process Steam Generation", "Textile & Dyeing Units", "Chemical Processing", "Ovens, Dryers & Food Plants"]
+  },
+  {
+    id: "pressure-reducing-systems",
+    slug: "pressure-reducing-systems",
+    number: "09",
+    name: "Pressure Reducing Systems (PRS)",
+    shortDescription: "Precision steam and gas pressure reduction stations for safe, steady line distribution.",
+    fullDescription: "Custom-engineered Pressure Reducing Systems (PRS / PRDS) designed to reduce high-pressure steam or gas utility lines down to precise, stable operating process pressures with automated safety shut-off valves and moisture separation.",
+    image: "/images/Industrial Pipeline.png",
+    hasSuppliedImage: true,
+    whatsappMessage: "Hello BS Energy India, I am interested in Pressure Reducing Systems (PRS). Please contact me regarding my requirement.",
+    features: [
+      "Precise downstream pressure regulation & safety release",
+      "Pre-engineered, compact skid-mounted assembly",
+      "Integrated moisture separator & strainer protection",
+      "Low maintenance, heavy-duty control valve components"
+    ],
+    applications: ["Steam Distribution Headers", "Gas Line Pressure Reduction", "Process Equipment Line Feed", "Plant Utility Lines"]
+  },
+  {
+    id: "condensate-recovery-systems",
+    slug: "condensate-recovery-systems",
+    number: "10",
+    name: "Condensate Recovery Systems",
+    shortDescription: "Energy-saving systems designed to return hot condensate water back to the boiler feed system.",
+    fullDescription: "Condensate Recovery Systems capture high-temperature condensate water from steam traps, heating coils, and heat exchangers, pumping it back into the boiler feedwater tank to dramatically cut fuel consumption and chemical water treatment costs.",
+    image: "/images/Heat Recovery Systems.jpg",
+    hasSuppliedImage: true,
+    whatsappMessage: "Hello BS Energy India, I am interested in Condensate Recovery Systems. Please contact me regarding my requirement.",
+    features: [
+      "Substantial fuel and treated water cost savings",
+      "Automatic high-temperature condensate handling",
+      "Corrosion-resistant receiver tank & pumping skid",
+      "Prevents flash steam loss & thermal shock"
+    ],
+    applications: ["Boiler Feedwater Return", "Steam Trap Energy Conservation", "Process Plant Heat Loops", "Textile & Chemical Utilities"]
+  },
+  {
+    id: "industrial-tanks",
+    slug: "industrial-tanks",
+    number: "11",
+    name: "Industrial Storage & Process Tanks",
+    shortDescription: "Manufacturers of all types of industrial storage tanks, pressure receivers, and process vessels.",
+    fullDescription: "Custom manufactured industrial tanks including fuel oil storage tanks, hot water storage tanks, chemical process receivers, surge vessels, and heavy-duty carbon/stainless steel tanks fabricated to exact engineering drawings.",
+    image: "/images/project-steel-tanks-layout.jpg",
+    hasSuppliedImage: true,
+    whatsappMessage: "Hello BS Energy India, I am interested in Industrial Tanks fabrication. Please contact me regarding my requirement.",
+    features: [
+      "Fabrication of all types & capacities of industrial tanks",
+      "High-grade carbon steel & stainless steel construction",
+      "Hydro-tested for 100% leak-proof structural integrity",
+      "Custom protective surface coatings & insulation lagging"
+    ],
+    applications: ["Fuel Oil Storage", "Chemical Process Receivers", "Water Storage Tanks", "Buffer & Expansion Tanks"]
   }
 ];
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
     number: "01",
-    title: "EQUIPMENT SUPPLY",
-    description: "Sourcing, procurement, and supply of industrial burners, controllers, heat exchangers, valves, and energy systems from trusted manufacturers.",
-    features: ["Verified equipment quality", "Prompt technical specification matching", "Complete documentation support"]
+    title: "ALL MAKE BOILERS & BURNERS (AMC | SPARES | SERVICE)",
+    description: "Comprehensive maintenance contracts (AMC), genuine spare parts supply, burner tuning, and 24/7 technical breakdown service for all makes of industrial boilers & burners.",
+    features: [
+      "Annual Maintenance Contracts (AMC) for Boilers & Burners",
+      "Genuine spare parts supply & nozzle/pump replacement",
+      "Combustion tuning, efficiency calibration & emergency service"
+    ]
   },
   {
     number: "02",
-    title: "FABRICATION",
-    description: "Custom structural and pressure fabrication including industrial chimneys, piping systems, ductwork, and specialized heating vessel frames.",
-    features: ["Precision structural welding", "Custom drawings compliance", "Quality inspection & testing"]
+    title: "ALL TYPES OF ERECTION WORK",
+    description: "Turnkey equipment positioning, heavy mobile crane lifting, chimney stack hoisting, tank installation, and structural steel alignment.",
+    features: [
+      "Heavy equipment crane rigging & positioning",
+      "Chimney stack, tank & boiler erection",
+      "Turnkey structural alignment & foundation bolting"
+    ]
   },
   {
     number: "03",
-    title: "PROJECT SUPPORT",
-    description: "On-site engineering assistance, equipment placement, pipeline alignment, and installation guidance for industrial expansion and retrofits.",
-    features: ["Site engineering alignment", "Technical installation guidance", "Integration assistance"]
+    title: "ALL TYPES OF PIPELINE WORK",
+    description: "Complete layout planning, precision fabrication, high-pressure line welding, and site installation of process steam, thermal fluid, fuel, gas, and water lines.",
+    features: [
+      "High-pressure certified line welding (MIG/TIG)",
+      "Steam headers, PRDS & fuel pipeline distribution",
+      "Skid-mounted piping manifolds & plant utility lines"
+    ]
   },
   {
     number: "04",
-    title: "TECHNICAL GUIDANCE",
-    description: "Expert engineering consultation to help select optimal burner sizing, combustion efficiency parameters, and energy recovery configurations.",
-    features: ["Combustion parameter review", "Energy efficiency optimization", "System sizing advisory"]
+    title: "ALL TYPES OF INSULATION WORK",
+    description: "Professional thermal insulation services including hot & cold insulation, rockwool/glasswool lagging, and protective aluminum/GI sheet cladding.",
+    features: [
+      "Boiler, oven & furnace thermal insulation",
+      "High-temperature steam & thermal fluid pipe cladding",
+      "Tank & ductwork insulation for maximum heat retention"
+    ]
   },
   {
     number: "05",
-    title: "CUSTOMIZED INDUSTRIAL SOLUTIONS",
-    description: "Tailored engineering solutions configured specifically around unique plant space constraints, operational duties, and heat demand profiles.",
-    features: ["Custom dimension fitting", "Bespoke control integration", "Targeted performance tuning"]
+    title: "FABRICATION OF INDUSTRIAL CHIMNEYS & TANKS",
+    description: "Custom manufacturing of self-supporting stacks, guy-wired chimneys, storage tanks, pressure receivers, and heavy structural fabrications.",
+    features: [
+      "Self-supporting & guy-wired steel stacks",
+      "All types of fuel, water & chemical storage tanks",
+      "Custom drawings compliance & hydro-tested quality"
+    ]
+  },
+  {
+    number: "06",
+    title: "TECHNICAL GUIDANCE & ENERGY AUDITS",
+    description: "Expert engineering advisory to optimize combustion parameters, retrofit waste heat recovery systems, and reduce overall plant fuel consumption.",
+    features: [
+      "Combustion parameter & burner efficiency review",
+      "Waste heat recovery & economizer retrofits",
+      "Customized engineering & heat demand profiling"
+    ]
   }
 ];
 

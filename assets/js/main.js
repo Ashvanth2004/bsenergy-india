@@ -17,7 +17,7 @@ var SITE_CONFIG = {
   instagram: "#",                   /* real Instagram URL */
   facebook: "#",                    /* real Facebook URL */
   address: "Ahmedabad, Gujarat, India",
-  googleAppsScriptUrl: ""           /* Web App URL deployed from Google Apps Script */
+  googleAppsScriptUrl: "https://script.google.com/macros/s/AKfycbxC6L9E-aU5vvPJwdXfzN7lP45RYaaOP0STna--DxZ595JDohDYP2foxgMY1xgq2R6g6w/exec"           /* Web App URL deployed from Google Apps Script */
 };
 
 var WA_GENERAL = "Hello BS Energy India, I would like to enquire about your industrial energy equipment and services. Please contact me. My requirement is:";

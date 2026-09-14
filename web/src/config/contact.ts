@@ -7,14 +7,14 @@
 // ============================================================================
 
 export const contactConfig = {
-  phone: process.env.NEXT_PUBLIC_PHONE ?? "[PHONE]",
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "[WHATSAPP]",
-  email: process.env.NEXT_PUBLIC_EMAIL ?? "[EMAIL]",
-  address: process.env.NEXT_PUBLIC_ADDRESS ?? "[COMPLETE ADDRESS]",
+  phone: process.env.NEXT_PUBLIC_PHONE ?? "+91 99656 62266",
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "+91 99656 62266",
+  email: process.env.NEXT_PUBLIC_EMAIL ?? "bsenergyindia@gmail.com",
+  address: process.env.NEXT_PUBLIC_ADDRESS ?? "Ahmedabad, Gujarat, India",
   location: "Ahmedabad, Gujarat, India",
   contactPerson: "Balamurugan",
-  instagram: process.env.NEXT_PUBLIC_INSTAGRAM ?? "[INSTAGRAM]",
-  facebook: process.env.NEXT_PUBLIC_FACEBOOK ?? "[FACEBOOK]",
+  instagram: process.env.NEXT_PUBLIC_INSTAGRAM ?? "#",
+  facebook: process.env.NEXT_PUBLIC_FACEBOOK ?? "#",
 } as const;
 
 export const companyConfig = {
@@ -38,34 +38,23 @@ export const whatsappMessages = {
 } as const;
 
 export function isContactConfigured(): boolean {
-  return (
-    contactConfig.phone !== "[PHONE]" &&
-    contactConfig.whatsapp !== "[WHATSAPP]" &&
-    contactConfig.email !== "[EMAIL]" &&
-    contactConfig.address !== "[COMPLETE ADDRESS]"
-  );
+  return true;
 }
 
 /**
- * Builds the wa.me link with encoded message. Handles unconfigured placeholder gracefully.
+ * Builds the wa.me link with encoded message for +91 99656 62266
  */
 export function buildWhatsAppLink(message: string = whatsappMessages.general): string {
   const number = contactConfig.whatsapp;
-  if (number === "[WHATSAPP]") {
-    return `https://wa.me/?text=${encodeURIComponent(message)}`;
-  }
   const cleanNumber = number.replace(/[^0-9]/g, "");
   return `https://wa.me/${cleanNumber}?text=${encodeURIComponent(message)}`;
 }
 
 /**
- * Builds tel: link for call buttons
+ * Builds tel: link for call buttons (automatically opens device dial pad)
  */
 export function buildPhoneLink(): string {
   const number = contactConfig.phone;
-  if (number === "[PHONE]") {
-    return "javascript:void(0);";
-  }
   const cleanNumber = number.replace(/[^0-9+]/g, "");
   return `tel:${cleanNumber}`;
 }

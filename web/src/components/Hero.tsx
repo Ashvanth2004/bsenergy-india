@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Phone, MessageSquare, ShieldCheck, ChevronDown, Activity, Settings, Flame, ChevronLeft, ChevronRight } from "lucide-react";
+import SparkTextLoop from "@/components/SparkTextLoop";
 import { buildWhatsAppLink, buildPhoneLink, companyConfig } from "@/config/contact";
 import { whatsappMessages } from "@/config/contact";
 
@@ -208,11 +209,14 @@ export default function Hero({ onOpenQuoteModal }: HeroProps) {
         <div className="lg:col-span-6 flex flex-col items-start space-y-6">
           
           {/* Top Tech Label */}
-          <div className="flex items-center gap-3 bg-white/5 border border-[#FF6B00]/30 px-3.5 py-1.5 rounded-sm">
-            <span className="w-2 h-2 rounded-full bg-[#FF6B00] animate-pulse" />
-            <span className="text-[11px] font-mono font-bold tracking-widest text-[#FF6B00] uppercase">
-              INDUSTRIAL ENERGY & HEATING SOLUTIONS
-            </span>
+          <div className="flex items-center gap-3 bg-white/5 border border-[#FF6B00]/30 px-3.5 py-1.5 rounded-sm overflow-hidden">
+            <span className="w-2 h-2 rounded-full bg-[#FF6B00] animate-pulse flex-shrink-0" />
+            <SparkTextLoop
+              text="INDUSTRIAL ENERGY & HEATING SOLUTIONS"
+              className="text-[11px] font-mono font-bold tracking-widest text-[#FF6B00] uppercase"
+              letterDelayMs={60}
+              pauseDurationMs={2500}
+            />
           </div>
 
           {/* Main Headline */}

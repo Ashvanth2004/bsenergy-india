@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+import SparkTextLoop from "@/components/SparkTextLoop";
+
 // Module-level variable persists across client-side SPA route transitions in Next.js,
 // but resets on initial page load or browser refresh (F5/Reload).
 let isInitialSiteLoad = true;
@@ -73,9 +75,14 @@ export default function LoadingScreen() {
               BS ENERGY INDIA
             </span>
           </h1>
-          <p className="text-xs font-mono text-gray-400 tracking-wider uppercase">
-            Industrial Heating & Energy Solutions
-          </p>
+          <div className="pt-1">
+            <SparkTextLoop
+              text="INDUSTRIAL ENERGY & HEATING SOLUTIONS"
+              className="text-xs font-mono tracking-wider text-[#FF6B00] uppercase font-bold justify-center"
+              letterDelayMs={40}
+              pauseDurationMs={1500}
+            />
+          </div>
         </div>
 
         {/* 2-Second Circular Loading Spinner */}

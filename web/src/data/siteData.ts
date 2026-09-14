@@ -120,7 +120,8 @@ export const PRODUCTS_DATA: Product[] = [
     name: "Hot Water Generators",
     shortDescription: "Efficient thermal water heating units for process requirements and commercial facilities.",
     fullDescription: "Heavy-duty Hot Water Generators designed for rapid thermal transfer and continuous hot water supply across industrial processes, textile processing, chemical plants, and commercial installations.",
-    hasSuppliedImage: false,
+    image: "/images/Hot Water Generator.png",
+    hasSuppliedImage: true,
     whatsappMessage: "Hello BS Energy India, I am interested in Hot Water Generators. Please contact me regarding my requirement.",
     features: [
       "High efficiency heat exchanger bundles",
@@ -229,6 +230,13 @@ export const BRANDS_DATA: BrandItem[] = [
 ];
 
 export const GALLERY_DATA: GalleryItem[] = [
+  {
+    id: "gal-hwg",
+    title: "Heavy-Duty Industrial Hot Water Generator Unit",
+    category: "PRODUCTS",
+    image: "/images/Hot Water Generator.png",
+    description: "High-efficiency industrial hot water generator engineered for rapid thermal transfer and continuous hot water supply."
+  },
   {
     id: "gal-0",
     title: "Twin Self-Supporting Industrial Chimney Stacks",

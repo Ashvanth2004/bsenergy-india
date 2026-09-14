@@ -13,6 +13,12 @@ interface HeroProps {
 
 const HERO_SLIDES = [
   {
+    src: "/images/Hot Water Generator.png",
+    title: "HEAVY-DUTY HOT WATER GENERATORS",
+    subtitle: "High-Efficiency Thermal Heating Units Engineered for Industrial Process & Commercial Applications",
+    tag: "THERMAL GENERATORS"
+  },
+  {
     src: "/images/industrial-chimney.jpg",
     title: "TWIN INDUSTRIAL STACK CHIMNEYS",
     subtitle: "Engineered Self-Supporting & Guy-Wired Chimneys with Helical Access Stairs for Exhaust Gas Dispersion",

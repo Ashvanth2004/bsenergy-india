@@ -10,6 +10,7 @@ export const contactConfig = {
   phone: process.env.NEXT_PUBLIC_PHONE ?? "+91 99656 62266",
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "+91 99656 62266",
   email: process.env.NEXT_PUBLIC_EMAIL ?? "bsenergyindia@gmail.com",
+  formEmail: "bsenergysupportteam.india@gmail.com",
   address: process.env.NEXT_PUBLIC_ADDRESS ?? "Ahmedabad, Gujarat, India",
   location: "Ahmedabad, Gujarat, India",
   contactPerson: "Balamurugan",

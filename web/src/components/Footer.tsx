@@ -18,7 +18,7 @@ export default function Footer() {
             <Link href="/" className="group inline-flex items-center gap-3">
               <div className="relative w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 p-1 group-hover:border-[#FF6B00]/60 transition-all duration-300 shadow-[0_0_15px_rgba(255,107,0,0.25)]">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/newlogo.jpeg"
                   alt="BS Energy India Logo"
                   width={40}
                   height={40}

@@ -3,11 +3,17 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+// Module-level variable persists across client-side SPA route transitions in Next.js,
+// but resets on initial page load or browser refresh (F5/Reload).
+let isInitialSiteLoad = true;
+
 export default function LoadingScreen() {
-  const [isFinished, setIsFinished] = useState(false);
-  const [isHidden, setIsHidden] = useState(false);
+  const [isHidden, setIsHidden] = useState(!isInitialSiteLoad);
+  const [isFinished, setIsFinished] = useState(!isInitialSiteLoad);
 
   useEffect(() => {
+    if (!isInitialSiteLoad) return;
+
     // Lock scroll during 2s loading
     document.body.style.overflow = "hidden";
 
@@ -21,6 +27,7 @@ export default function LoadingScreen() {
     // Hide completely after fade-out transition (2000ms + 500ms)
     const hideTimeout = setTimeout(() => {
       setIsHidden(true);
+      isInitialSiteLoad = false;
       document.body.style.overflow = "auto";
     }, totalDuration + 500);
 

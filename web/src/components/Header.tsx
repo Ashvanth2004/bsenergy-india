@@ -63,7 +63,7 @@ export default function Header({ onOpenQuoteModal }: HeaderProps) {
           <Link href="/" onClick={handleHomeClick} className="group flex items-center gap-3">
             <div className="relative w-11 h-11 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 p-1 group-hover:border-[#FF6B00]/60 transition-all duration-300 shadow-[0_0_15px_rgba(255,107,0,0.25)]">
               <Image
-                src="/images/newlogo.jpeg"
+                src="/images/alogoasgreen.png"
                 alt="BS Energy India Logo"
                 width={44}
                 height={44}

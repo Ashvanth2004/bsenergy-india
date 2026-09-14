@@ -49,7 +49,7 @@ export default function LoadingScreen() {
         {/* Brand Emblem */}
         <div className="w-24 h-24 relative bg-[#0F1D30]/80 border-2 border-[#FF6B00]/50 rounded-2xl flex items-center justify-center p-3 shadow-[0_0_35px_rgba(255,107,0,0.35)] backdrop-blur-md">
           <Image
-            src="/images/newlogo.jpeg"
+            src="/images/alogoasgreen.png"
             alt="BS Energy India Logo"
             width={80}
             height={80}

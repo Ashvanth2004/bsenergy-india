@@ -13,6 +13,12 @@ interface HeroProps {
 
 const HERO_SLIDES = [
   {
+    src: "/images/industrial-chimney.jpg",
+    title: "TWIN INDUSTRIAL STACK CHIMNEYS",
+    subtitle: "Engineered Self-Supporting & Guy-Wired Chimneys with Helical Access Stairs for Exhaust Gas Dispersion",
+    tag: "INDUSTRIAL CHIMNEYS"
+  },
+  {
     src: "/images/project-precision-welding-team.jpg",
     title: "ON-SITE FABRICATION & WELDING",
     subtitle: "Certified Welding Specialists Executing Heavy Steel Deck Fabrication",

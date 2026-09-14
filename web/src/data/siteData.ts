@@ -101,10 +101,12 @@ export const PRODUCTS_DATA: Product[] = [
     name: "Industrial Chimneys",
     shortDescription: "Engineered exhaust and stack systems designed for safe dispersion of combustion gases.",
     fullDescription: "Industrial Chimneys engineered to handle high-temperature flue gases, providing efficient draft and environmental dispersion for industrial boilers, furnaces, and heating equipment.",
-    hasSuppliedImage: false,
+    image: "/images/industrial-chimney.jpg",
+    hasSuppliedImage: true,
     whatsappMessage: "Hello BS Energy India, I am interested in your Industrial Chimney solutions. Please contact me regarding my requirement.",
     features: [
       "Self-supporting and guy-wired structural options",
+      "Helical access stairs and safety platforms",
       "Thermal insulation lining for heat retention",
       "Weather and corrosion resistant coatings",
       "Designed according to draft and dispersion standards"
@@ -227,6 +229,13 @@ export const BRANDS_DATA: BrandItem[] = [
 ];
 
 export const GALLERY_DATA: GalleryItem[] = [
+  {
+    id: "gal-0",
+    title: "Twin Self-Supporting Industrial Chimney Stacks",
+    category: "EQUIPMENT",
+    image: "/images/industrial-chimney.jpg",
+    description: "Engineered twin self-supporting steel stack chimneys with helical access stairs for industrial exhaust gas dispersion."
+  },
   {
     id: "gal-1",
     title: "On-Site Deck Precision Welding",

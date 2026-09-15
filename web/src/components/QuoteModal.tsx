@@ -105,7 +105,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct }: QuoteMod
 
   return (
     <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto">
-      <div className="bg-[#0B1624] border border-[#FF6B00]/40 rounded-sm max-w-2xl w-full p-6 sm:p-8 relative shadow-[0_0_50px_rgba(255,107,0,0.3)] animate-in fade-in zoom-in-95 duration-200 my-8">
+      <div className="bg-[#0D0304] border border-[#9E1218]/50 rounded-sm max-w-2xl w-full p-6 sm:p-8 relative shadow-[0_0_50px_rgba(158,18,24,0.35)] animate-in fade-in zoom-in-95 duration-200 my-8">
         
         {/* Close Button */}
         <button
@@ -122,7 +122,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct }: QuoteMod
         {!isSubmitted ? (
           <div className="space-y-6">
             <div className="space-y-2 border-b border-white/10 pb-4">
-              <div className="tech-label">INDUSTRIAL ENQUIRY FORM</div>
+              <div className="tech-label text-[#CBD5E1]">INDUSTRIAL ENQUIRY FORM</div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
                 Request Engineering Quotation
               </h2>
@@ -140,7 +140,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct }: QuoteMod
                   <input
                     {...register("name")}
                     placeholder="John Doe / Contact Person"
-                    className="w-full bg-[#0F1D30] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
+                    className="w-full bg-[#160608] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
                   />
                   {errors.name && <p className="text-[10px] font-mono text-red-400">{errors.name.message}</p>}
                 </div>
@@ -151,7 +151,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct }: QuoteMod
                   <input
                     {...register("company")}
                     placeholder="Acme Industrial Ltd"
-                    className="w-full bg-[#0F1D30] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
+                    className="w-full bg-[#160608] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
                   />
                   {errors.company && <p className="text-[10px] font-mono text-red-400">{errors.company.message}</p>}
                 </div>
@@ -162,7 +162,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct }: QuoteMod
                   <input
                     {...register("phone")}
                     placeholder="+91 98765 43210"
-                    className="w-full bg-[#0F1D30] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
+                    className="w-full bg-[#160608] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
                   />
                   {errors.phone && <p className="text-[10px] font-mono text-red-400">{errors.phone.message}</p>}
                 </div>
@@ -174,7 +174,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct }: QuoteMod
                     {...register("email")}
                     type="email"
                     placeholder="purchase@acme.com"
-                    className="w-full bg-[#0F1D30] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
+                    className="w-full bg-[#160608] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
                   />
                   {errors.email && <p className="text-[10px] font-mono text-red-400">{errors.email.message}</p>}
                 </div>
@@ -186,10 +186,10 @@ export default function QuoteModal({ isOpen, onClose, initialProduct }: QuoteMod
                   <label className="text-xs font-mono text-gray-300 font-bold uppercase">PRODUCT / SERVICE *</label>
                   <select
                     {...register("product")}
-                    className="w-full bg-[#0F1D30] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
+                    className="w-full bg-[#160608] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
                   >
                     {productOptions.map((opt) => (
-                      <option key={opt} value={opt} className="bg-[#0B1624] text-white">
+                      <option key={opt} value={opt} className="bg-[#0D0304] text-white">
                         {opt}
                       </option>
                     ))}
@@ -203,7 +203,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct }: QuoteMod
                   <input
                     {...register("quantity")}
                     placeholder="e.g. 2 Units / 500 Mkcal"
-                    className="w-full bg-[#0F1D30] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
+                    className="w-full bg-[#160608] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
                   />
                   {errors.quantity && <p className="text-[10px] font-mono text-red-400">{errors.quantity.message}</p>}
                 </div>
@@ -214,7 +214,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct }: QuoteMod
                   <input
                     {...register("industry")}
                     placeholder="e.g. Textile / Chemical"
-                    className="w-full bg-[#0F1D30] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
+                    className="w-full bg-[#160608] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
                   />
                   {errors.industry && <p className="text-[10px] font-mono text-red-400">{errors.industry.message}</p>}
                 </div>
@@ -227,7 +227,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct }: QuoteMod
                   {...register("requirement")}
                   rows={4}
                   placeholder="Describe your technical requirements, fuel type, temperature specs, or project timeline..."
-                  className="w-full bg-[#0F1D30] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
+                  className="w-full bg-[#160608] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors"
                 />
                 {errors.requirement && <p className="text-[10px] font-mono text-red-400">{errors.requirement.message}</p>}
               </div>
@@ -237,7 +237,7 @@ export default function QuoteModal({ isOpen, onClose, initialProduct }: QuoteMod
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full sm:w-auto flex-1 py-3.5 bg-[#FF6B00] hover:bg-white text-black font-mono font-bold text-xs rounded-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(255,107,0,0.3)]"
+                  className="w-full sm:w-auto flex-1 py-3.5 bg-gradient-to-r from-[#9E1218] via-[#B81D24] to-[#7F0C12] hover:from-slate-100 hover:to-slate-200 text-white hover:text-black font-mono font-bold text-xs rounded-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(158,18,24,0.4)]"
                 >
                   <Send className="w-4 h-4" />
                   <span>SEND REQUIREMENT</span>

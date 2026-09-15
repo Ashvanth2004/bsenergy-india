@@ -27,18 +27,18 @@ export default function GalleryPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#0B1624] text-[#F3F5F7] relative">
+    <main className="min-h-screen bg-[#0D0304] text-[#F1F5F9] relative">
       <Header onOpenQuoteModal={() => handleOpenQuoteModal()} />
 
       {/* Page Header / Hero Banner */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-[#0F1D30] to-[#0B1624] border-b border-white/10 px-4 lg:px-8 relative overflow-hidden">
+      <section className="pt-32 pb-16 bg-gradient-to-b from-[#160608] to-[#0D0304] border-b border-white/10 px-4 lg:px-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none" />
         <div className="max-w-7xl mx-auto relative z-10 space-y-4">
           <div className="flex items-center justify-between gap-4 flex-wrap">
-            <div className="flex items-center gap-2 text-xs font-mono text-gray-400">
-              <Link href="/" className="hover:text-[#FF6B00] transition-colors">HOME</Link>
-              <ChevronRight className="w-3.5 h-3.5 text-gray-600" />
-              <span className="text-[#FF6B00]">INDUSTRIAL GALLERY</span>
+            <div className="flex items-center gap-2 text-xs font-mono text-slate-400">
+              <Link href="/" className="hover:text-[#9E1218] transition-colors">HOME</Link>
+              <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
+              <span className="text-[#9E1218]">INDUSTRIAL GALLERY</span>
             </div>
             <BackButton fallbackHref="/" />
           </div>
@@ -46,17 +46,17 @@ export default function GalleryPage() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight">
             Photo & Equipment Gallery
           </h1>
-          <p className="text-gray-300 max-w-2xl text-base sm:text-lg font-normal leading-relaxed">
+          <p className="text-slate-300 max-w-2xl text-base sm:text-lg font-normal leading-relaxed">
             Explore authentic field execution photography, equipment installations, certified structural welding, and high-efficiency combustion burner systems.
           </p>
 
-          <div className="flex flex-wrap items-center gap-6 pt-4 text-xs font-mono text-gray-300">
+          <div className="flex flex-wrap items-center gap-6 pt-4 text-xs font-mono text-slate-300">
             <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1.5 rounded-sm">
-              <Camera className="w-4 h-4 text-[#FF6B00]" />
+              <Camera className="w-4 h-4 text-[#9E1218]" />
               <span>21 HIGH-RESOLUTION GALLERY ITEMS</span>
             </div>
             <div className="flex items-center gap-2 bg-white/5 border border-white/10 px-3 py-1.5 rounded-sm">
-              <ImageIcon className="w-4 h-4 text-[#FF6B00]" />
+              <ImageIcon className="w-4 h-4 text-[#9E1218]" />
               <span>INTERACTIVE LIGHTBOX VIEWER</span>
             </div>
           </div>

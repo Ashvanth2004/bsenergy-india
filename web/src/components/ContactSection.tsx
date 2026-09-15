@@ -108,34 +108,34 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#0B1624] relative border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-4 lg:px-8">
+    <section id="contact" className="py-24 bg-[#0A0203] relative border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-4 lg:px-8 space-y-16">
         
         {/* Header */}
-        <div className="space-y-3 mb-16">
-          <div className="tech-label flex items-center gap-2">
-            <span className="w-1.5 h-1.5 bg-[#FF6B00]" />
-            10 / DIRECT CONTACT & ENQUIRY
+        <div className="space-y-3">
+          <div className="tech-label flex items-center gap-2 text-[#CBD5E1]">
+            <span className="w-1.5 h-1.5 bg-[#9E1218]" />
+            10 / GET IN TOUCH
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-            Let's Build the Right Industrial Solution
+            Contact & Location Details
           </h2>
           <p className="text-gray-400 text-sm max-w-xl font-mono">
-            Fill in the enquiry form below or get in touch directly with our sales and technical team for equipment quotes and custom project discussions.
+            Direct sales desk, technical assistance, project discussions, and Google Sheet integrated enquiry form.
           </p>
         </div>
 
-        {/* Contact Info & Form Grid */}
+        {/* Grid: Company Details + Form */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* Company Details Card (Left 5 cols) */}
-          <div className="lg:col-span-5 bg-[#0F1D30] border border-white/10 rounded-sm p-8 space-y-6 flex flex-col justify-between shadow-xl">
+          <div className="lg:col-span-5 bg-[#160608] border border-white/10 rounded-sm p-8 space-y-6 flex flex-col justify-between shadow-xl">
             <div className="space-y-6">
               <div className="border-b border-white/10 pb-4">
                 <div className="text-2xl font-extrabold text-white tracking-tight uppercase">
                   {companyConfig.name}
                 </div>
-                <div className="text-xs font-mono text-[#FF6B00] tracking-widest mt-1">
+                <div className="text-xs font-mono text-[#E2E8F0] tracking-widest mt-1">
                   {companyConfig.tagline}
                 </div>
               </div>
@@ -143,7 +143,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
               {/* Key Meta Badges */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono text-gray-300">
                 <div className="flex items-center gap-2.5 bg-white/5 p-3 rounded-sm border border-white/5">
-                  <UserCheck className="w-4 h-4 text-[#FF6B00]" />
+                  <UserCheck className="w-4 h-4 text-[#9E1218]" />
                   <div>
                     <div className="text-[10px] text-gray-400">CONTACT PERSON</div>
                     <div className="font-bold text-white">{contactConfig.contactPerson}</div>
@@ -151,7 +151,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                 </div>
 
                 <div className="flex items-center gap-2.5 bg-white/5 p-3 rounded-sm border border-white/5">
-                  <Calendar className="w-4 h-4 text-[#FF6B00]" />
+                  <Calendar className="w-4 h-4 text-[#9E1218]" />
                   <div>
                     <div className="text-[10px] text-gray-400 font-mono">ESTABLISHED / EXP</div>
                     <div className="font-bold text-white">{companyConfig.established} ({companyConfig.yearsExperience} Yrs)</div>
@@ -162,7 +162,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
               {/* Address / Email / Phone Details */}
               <div className="space-y-4 pt-2">
                 <div className="flex items-start gap-3 text-sm text-gray-300">
-                  <MapPin className="w-5 h-5 text-[#FF6B00] shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 text-[#9E1218] shrink-0 mt-0.5" />
                   <div>
                     <div className="text-xs font-mono font-bold text-gray-400 uppercase">LOCATION / ADDRESS</div>
                     <div className="font-semibold text-white">{contactConfig.address}</div>
@@ -170,7 +170,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                 </div>
 
                 <div className="flex items-start gap-3 text-sm text-gray-300">
-                  <Phone className="w-5 h-5 text-[#FF6B00] shrink-0 mt-0.5" />
+                  <Phone className="w-5 h-5 text-[#9E1218] shrink-0 mt-0.5" />
                   <div>
                     <div className="text-xs font-mono font-bold text-gray-400 uppercase">PHONE NUMBER</div>
                     <div className="font-mono font-bold text-white">{contactConfig.phone}</div>
@@ -186,7 +186,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                 </div>
 
                 <div className="flex items-start gap-3 text-sm text-gray-300">
-                  <Mail className="w-5 h-5 text-[#FF6B00] shrink-0 mt-0.5" />
+                  <Mail className="w-5 h-5 text-[#9E1218] shrink-0 mt-0.5" />
                   <div>
                     <div className="text-xs font-mono font-bold text-gray-400 uppercase">EMAIL ADDRESS</div>
                     <div className="font-mono font-bold text-white">{contactConfig.email}</div>
@@ -201,7 +201,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                 href={buildPhoneLink()}
                 className="py-3 bg-white/5 hover:bg-white/10 border border-white/15 text-white font-mono text-xs font-bold text-center rounded-sm transition-colors flex items-center justify-center gap-1.5"
               >
-                <Phone className="w-3.5 h-3.5 text-[#FF6B00]" />
+                <Phone className="w-3.5 h-3.5 text-[#9E1218]" />
                 CALL NOW
               </a>
 
@@ -219,9 +219,9 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
           </div>
 
           {/* Interactive Enquiry Form (Right 7 cols) */}
-          <div className="lg:col-span-7 bg-gradient-to-br from-[#0F1D30] to-[#162438] border border-white/10 rounded-sm p-6 sm:p-8 space-y-6 shadow-xl">
+          <div className="lg:col-span-7 bg-gradient-to-br from-[#160608] to-[#1C080B] border border-white/10 rounded-sm p-6 sm:p-8 space-y-6 shadow-xl">
             <div className="border-b border-white/10 pb-4 space-y-1">
-              <div className="text-xs font-mono font-bold text-[#FF6B00] tracking-widest uppercase">
+              <div className="text-xs font-mono font-bold text-[#CBD5E1] tracking-widest uppercase">
                 DIRECT ENQUIRY FORM
               </div>
               <h3 className="text-2xl font-extrabold text-white">
@@ -260,7 +260,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                 {/* Full Name */}
                 <div className="space-y-1">
                   <label className="text-xs font-mono text-gray-300 font-bold uppercase block">
-                    FULL NAME <span className="text-[#FF6B00]">*</span>
+                    FULL NAME <span className="text-[#9E1218]">*</span>
                   </label>
                   <input
                     type="text"
@@ -268,7 +268,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                     onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                     placeholder="John Doe"
                     disabled={isSubmitting}
-                    className="w-full bg-[#08101C] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors disabled:opacity-50"
+                    className="w-full bg-[#0A0203] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors disabled:opacity-50"
                   />
                   {errors.fullName && <p className="text-[10px] font-mono text-red-400 mt-1">{errors.fullName}</p>}
                 </div>
@@ -276,7 +276,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                 {/* Company Name */}
                 <div className="space-y-1">
                   <label className="text-xs font-mono text-gray-300 font-bold uppercase block">
-                    COMPANY NAME <span className="text-[#FF6B00]">*</span>
+                    COMPANY NAME <span className="text-[#9E1218]">*</span>
                   </label>
                   <input
                     type="text"
@@ -284,7 +284,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                     onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
                     placeholder="Acme Energy Ltd"
                     disabled={isSubmitting}
-                    className="w-full bg-[#08101C] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors disabled:opacity-50"
+                    className="w-full bg-[#0A0203] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors disabled:opacity-50"
                   />
                   {errors.companyName && <p className="text-[10px] font-mono text-red-400 mt-1">{errors.companyName}</p>}
                 </div>
@@ -292,7 +292,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                 {/* Email Address */}
                 <div className="space-y-1">
                   <label className="text-xs font-mono text-gray-300 font-bold uppercase block">
-                    EMAIL ADDRESS <span className="text-[#FF6B00]">*</span>
+                    EMAIL ADDRESS <span className="text-[#9E1218]">*</span>
                   </label>
                   <input
                     type="email"
@@ -300,7 +300,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="name@company.com"
                     disabled={isSubmitting}
-                    className="w-full bg-[#08101C] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors disabled:opacity-50"
+                    className="w-full bg-[#0A0203] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors disabled:opacity-50"
                   />
                   {errors.email && <p className="text-[10px] font-mono text-red-400 mt-1">{errors.email}</p>}
                 </div>
@@ -308,7 +308,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                 {/* Phone Number */}
                 <div className="space-y-1">
                   <label className="text-xs font-mono text-gray-300 font-bold uppercase block">
-                    PHONE NUMBER <span className="text-[#FF6B00]">*</span>
+                    PHONE NUMBER <span className="text-[#9E1218]">*</span>
                   </label>
                   <input
                     type="tel"
@@ -316,7 +316,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="+91 99656 62266"
                     disabled={isSubmitting}
-                    className="w-full bg-[#08101C] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors disabled:opacity-50"
+                    className="w-full bg-[#0A0203] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors disabled:opacity-50"
                   />
                   {errors.phone && <p className="text-[10px] font-mono text-red-400 mt-1">{errors.phone}</p>}
                 </div>
@@ -326,13 +326,13 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
               {/* Requirement / Subject Select */}
               <div className="space-y-1">
                 <label className="text-xs font-mono text-gray-300 font-bold uppercase block">
-                  REQUIREMENT / PRODUCT SUBJECT <span className="text-[#FF6B00]">*</span>
+                  REQUIREMENT / PRODUCT SUBJECT <span className="text-[#9E1218]">*</span>
                 </label>
                 <select
                   value={formData.requirement}
                   onChange={(e) => setFormData({ ...formData, requirement: e.target.value })}
                   disabled={isSubmitting}
-                  className="w-full bg-[#08101C] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors disabled:opacity-50"
+                  className="w-full bg-[#0A0203] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors disabled:opacity-50"
                 >
                   <option value="Industrial Burner">Industrial Burners</option>
                   <option value="Industrial Chimney">Industrial Chimneys</option>
@@ -349,7 +349,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
               {/* Message */}
               <div className="space-y-1">
                 <label className="text-xs font-mono text-gray-300 font-bold uppercase block">
-                  MESSAGE / REQUIREMENT DETAILS <span className="text-[#FF6B00]">*</span>
+                  MESSAGE / REQUIREMENT DETAILS <span className="text-[#9E1218]">*</span>
                 </label>
                 <textarea
                   rows={4}
@@ -357,7 +357,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="Please specify capacity, fuel type, temperature specs, or project timeline..."
                   disabled={isSubmitting}
-                  className="w-full bg-[#08101C] border border-white/15 focus:border-[#FF6B00] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors disabled:opacity-50 resize-y"
+                  className="w-full bg-[#0A0203] border border-white/15 focus:border-[#9E1218] text-white text-xs font-mono p-3 rounded-sm outline-none transition-colors disabled:opacity-50 resize-y"
                 />
                 {errors.message && <p className="text-[10px] font-mono text-red-400 mt-1">{errors.message}</p>}
               </div>
@@ -366,7 +366,7 @@ export default function ContactSection({ onOpenQuoteModal }: ContactSectionProps
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 bg-[#FF6B00] hover:bg-white text-black font-mono font-bold text-xs rounded-sm transition-all duration-200 text-center tracking-wider uppercase flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(255,107,0,0.3)] disabled:bg-gray-600 disabled:text-gray-400 disabled:cursor-not-allowed"
+                className="w-full py-4 bg-gradient-to-r from-[#9E1218] via-[#B81D24] to-[#7F0C12] hover:from-slate-100 hover:to-slate-200 text-white hover:text-black font-mono font-bold text-xs rounded-sm transition-all duration-200 text-center tracking-wider uppercase flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(158,18,24,0.4)] disabled:bg-gray-600 disabled:text-gray-400 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <>

@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#08101C] text-gray-400 border-t border-white/10 pt-16 pb-28 md:pb-16 relative overflow-hidden">
+    <footer className="bg-[#0A0203] text-gray-400 border-t border-white/10 pt-16 pb-28 md:pb-16 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 lg:px-8 space-y-12">
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start">
@@ -16,20 +16,20 @@ export default function Footer() {
           {/* Col 1: Brand Info (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
             <Link href="/" className="group inline-flex items-center gap-3">
-              <div className="relative w-10 h-10 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 p-1 group-hover:border-[#FF6B00]/60 transition-all duration-300 shadow-[0_0_15px_rgba(255,107,0,0.25)]">
+              <div className="relative w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 p-0.5 group-hover:border-[#9E1218]/80 transition-all duration-300 shadow-[0_0_15px_rgba(158,18,24,0.35)] overflow-hidden">
                 <Image
-                  src="/images/alogoasgreen.png"
+                  src="/images/bs_energy_logo.png"
                   alt="BS Energy India Logo"
                   width={40}
                   height={40}
-                  className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-300"
+                  className="object-contain w-full h-full rounded-full group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="flex flex-col">
                 <span className="text-white font-black tracking-widest text-base leading-tight uppercase">
                   {companyConfig.nameShort}
                 </span>
-                <span className="text-[#FF6B00] text-[9px] font-mono tracking-[0.2em] uppercase font-bold">
+                <span className="text-[#E2E8F0] text-[9px] font-mono tracking-[0.2em] uppercase font-bold">
                   INDIA
                 </span>
               </div>
@@ -52,46 +52,46 @@ export default function Footer() {
 
           {/* Col 2: Navigation Links (2 cols) */}
           <div className="lg:col-span-2 space-y-3">
-            <div className="text-xs font-mono font-bold text-[#FF6B00] tracking-widest uppercase border-b border-white/10 pb-2">
+            <div className="text-xs font-mono font-bold text-[#CBD5E1] tracking-widest uppercase border-b border-[#9E1218]/40 pb-2">
               NAVIGATION
             </div>
             <ul className="space-y-2 text-xs font-mono">
-              <li><Link href="/" className="hover:text-white transition-colors">HOME</Link></li>
-              <li><Link href="/about" className="hover:text-white transition-colors">ABOUT US</Link></li>
-              <li><Link href="/products" className="hover:text-white transition-colors">PRODUCTS</Link></li>
-              <li><Link href="/services" className="hover:text-white transition-colors">SERVICES</Link></li>
-              <li><Link href="/industries" className="hover:text-white transition-colors">INDUSTRIES</Link></li>
-              <li><Link href="/projects" className="hover:text-white transition-colors">PROJECTS</Link></li>
-              <li><Link href="/gallery" className="hover:text-white transition-colors">GALLERY</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors">CONTACT</Link></li>
+              <li><Link href="/" className="hover:text-[#9E1218] transition-colors">HOME</Link></li>
+              <li><Link href="/about" className="hover:text-[#9E1218] transition-colors">ABOUT US</Link></li>
+              <li><Link href="/products" className="hover:text-[#9E1218] transition-colors">PRODUCTS</Link></li>
+              <li><Link href="/services" className="hover:text-[#9E1218] transition-colors">SERVICES</Link></li>
+              <li><Link href="/industries" className="hover:text-[#9E1218] transition-colors">INDUSTRIES</Link></li>
+              <li><Link href="/projects" className="hover:text-[#9E1218] transition-colors">PROJECTS</Link></li>
+              <li><Link href="/gallery" className="hover:text-[#9E1218] transition-colors">GALLERY</Link></li>
+              <li><Link href="/contact" className="hover:text-[#9E1218] transition-colors">CONTACT</Link></li>
             </ul>
           </div>
 
           {/* Col 3: Key Products (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
-            <div className="text-xs font-mono font-bold text-[#FF6B00] tracking-widest uppercase border-b border-white/10 pb-2">
+            <div className="text-xs font-mono font-bold text-[#CBD5E1] tracking-widest uppercase border-b border-[#9E1218]/40 pb-2">
               EQUIPMENT CATALOG
             </div>
             <ul className="space-y-2 text-xs font-mono">
-              <li><Link href="/products/industrial-burners" className="hover:text-[#FF6B00] transition-colors">Industrial Burners</Link></li>
-              <li><Link href="/products/burner-controllers" className="hover:text-[#FF6B00] transition-colors">Burner Controllers</Link></li>
-              <li><Link href="/products/industrial-pipelines" className="hover:text-[#FF6B00] transition-colors">Industrial Pipelines</Link></li>
-              <li><Link href="/products/industrial-chimneys" className="hover:text-[#FF6B00] transition-colors">Industrial Chimneys</Link></li>
-              <li><Link href="/products/hot-water-generators" className="hover:text-[#FF6B00] transition-colors">Hot Water Generators</Link></li>
-              <li><Link href="/products/heat-recovery-systems" className="hover:text-[#FF6B00] transition-colors">Heat Recovery Systems</Link></li>
-              <li><Link href="/products/thermal-fluid-heaters" className="hover:text-[#FF6B00] transition-colors">Thermal Fluid Heaters</Link></li>
+              <li><Link href="/products/industrial-burners" className="hover:text-[#9E1218] transition-colors">Industrial Burners</Link></li>
+              <li><Link href="/products/burner-controllers" className="hover:text-[#9E1218] transition-colors">Burner Controllers</Link></li>
+              <li><Link href="/products/industrial-pipelines" className="hover:text-[#9E1218] transition-colors">Industrial Pipelines</Link></li>
+              <li><Link href="/products/industrial-chimneys" className="hover:text-[#9E1218] transition-colors">Industrial Chimneys</Link></li>
+              <li><Link href="/products/hot-water-generators" className="hover:text-[#9E1218] transition-colors">Hot Water Generators</Link></li>
+              <li><Link href="/products/heat-recovery-systems" className="hover:text-[#9E1218] transition-colors">Heat Recovery Systems</Link></li>
+              <li><Link href="/products/thermal-fluid-heaters" className="hover:text-[#9E1218] transition-colors">Thermal Fluid Heaters</Link></li>
             </ul>
           </div>
 
           {/* Col 4: Contact Config Info (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
-            <div className="text-xs font-mono font-bold text-[#FF6B00] tracking-widest uppercase border-b border-white/10 pb-2">
+            <div className="text-xs font-mono font-bold text-[#CBD5E1] tracking-widest uppercase border-b border-[#9E1218]/40 pb-2">
               CONTACT DESK
             </div>
             
             <div className="space-y-2 text-xs font-mono">
               <div className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-[#FF6B00]" />
+                <Phone className="w-3.5 h-3.5 text-[#9E1218]" />
                 <span>{contactConfig.phone}</span>
               </div>
               <div className="flex items-center gap-2">
@@ -99,11 +99,11 @@ export default function Footer() {
                 <span>{contactConfig.whatsapp}</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-[#FF6B00]" />
+                <Mail className="w-3.5 h-3.5 text-[#9E1218]" />
                 <span>{contactConfig.email}</span>
               </div>
               <div className="flex items-start gap-2 pt-1">
-                <MapPin className="w-3.5 h-3.5 text-[#FF6B00] shrink-0 mt-0.5" />
+                <MapPin className="w-3.5 h-3.5 text-[#9E1218] shrink-0 mt-0.5" />
                 <span>{contactConfig.address}</span>
               </div>
             </div>

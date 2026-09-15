@@ -2,27 +2,27 @@
 
 @layer base {
   :root {
-    --navy-dark: #0B1624;
-    --navy-card: #0F1D30;
-    --navy-light: #162438;
-    --charcoal: #111827;
-    --industrial-gray: #F3F5F7;
-    --industrial-orange: #FF6B00;
-    --industrial-orange-hover: #E05D00;
-    --industrial-orange-glow: rgba(255, 107, 0, 0.25);
-    --border-dark: rgba(255, 255, 255, 0.08);
+    --navy-dark: #0D0304;
+    --navy-card: #160608;
+    --navy-light: #1C080B;
+    --charcoal: #120507;
+    --industrial-gray: #F1F5F9;
+    --industrial-orange: #9E1218;
+    --industrial-orange-hover: #B81D24;
+    --industrial-orange-glow: rgba(158, 18, 24, 0.35);
+    --border-dark: rgba(226, 232, 240, 0.12);
   }
 
   html {
     scroll-behavior: smooth;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #F3F5F7;
-    background-color: #0B1624;
+    color: #F1F5F9;
+    background-color: #0D0304;
   }
 
   body {
-    background-color: #0B1624;
-    color: #F3F5F7;
+    background-color: #0D0304;
+    color: #F1F5F9;
     overflow-x: hidden;
   }
 }
@@ -31,22 +31,22 @@
 .bg-grid-pattern {
   background-size: 40px 40px;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, rgba(226, 232, 240, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(226, 232, 240, 0.04) 1px, transparent 1px);
 }
 
 .bg-grid-pattern-light {
   background-size: 40px 40px;
   background-image: 
-    linear-gradient(to right, rgba(11, 22, 36, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(11, 22, 36, 0.06) 1px, transparent 1px);
+    linear-gradient(to right, rgba(13, 3, 4, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(13, 3, 4, 0.06) 1px, transparent 1px);
 }
 
 .bg-blueprint-grid {
   background-size: 20px 20px;
   background-image: 
-    linear-gradient(to right, rgba(255, 107, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 107, 0, 0.05) 1px, transparent 1px);
+    linear-gradient(to right, rgba(158, 18, 24, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(158, 18, 24, 0.08) 1px, transparent 1px);
 }
 
 /* Animated tech line overlay */
@@ -65,16 +65,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0B1624;
+  background: #0D0304;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1F293D;
+  background: #2A0B0E;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FF6B00;
+  background: #9E1218;
 }
 
 /* Typography Helpers */
@@ -84,7 +84,7 @@
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 700;
-  color: #FF6B00;
+  color: #CBD5E1;
 }
 
 /* Industrial Corner Cut / Blueprint Box accents */
@@ -98,8 +98,8 @@
   left: -1px;
   width: 8px;
   height: 8px;
-  border-top: 2px solid #FF6B00;
-  border-left: 2px solid #FF6B00;
+  border-top: 2px solid #9E1218;
+  border-left: 2px solid #9E1218;
 }
 
 .tech-corner-br {
@@ -112,8 +112,8 @@
   right: -1px;
   width: 8px;
   height: 8px;
-  border-bottom: 2px solid #FF6B00;
-  border-right: 2px solid #FF6B00;
+  border-bottom: 2px solid #9E1218;
+  border-right: 2px solid #9E1218;
 }
 
 /* Industrial Spark Animation Keyframes */

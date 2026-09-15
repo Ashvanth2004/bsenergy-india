@@ -6,12 +6,16 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#0B1624",
+  themeColor: "#0D0304",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bsenergy-india.com"),
   title: "BS Energy India | Industrial Heating & Energy Solutions",
+  icons: {
+    icon: "/images/bs_energy_logo.png",
+    apple: "/images/bs_energy_logo.png",
+  },
   description:
     "BS Energy India is a manufacturer, exporter, trader and service provider of industrial burners, chimneys, burner controllers, hot water generators, heat recovery systems, thermal fluid heaters, industrial pipelines and fabrication services.",
   keywords: [
@@ -102,7 +106,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-[#0B1624] text-[#F3F5F7] antialiased selection:bg-[#FF6B00] selection:text-black min-h-screen flex flex-col">
+      <body className="bg-[#0D0304] text-[#F1F5F9] antialiased selection:bg-[#9E1218] selection:text-white min-h-screen flex flex-col">
         {children}
       </body>
     </html>

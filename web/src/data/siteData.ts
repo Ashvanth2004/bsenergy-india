@@ -356,13 +356,6 @@ export const GALLERY_DATA: GalleryItem[] = [
     description: "Heavy carbon and stainless steel industrial storage tanks fabricated for fuel oil and process chemical storage."
   },
   {
-    id: "gal-logo3d",
-    title: "BS Energy India Official Emblem",
-    category: "PRODUCTS",
-    image: "/images/BS_ENERGY_INDIA_3D_LOGO.jpg",
-    description: "Official 3D metallic brand emblem of BS Energy India."
-  },
-  {
     id: "gal-hrs",
     title: "Industrial Heat Recovery System (Economizer Unit)",
     category: "PRODUCTS",

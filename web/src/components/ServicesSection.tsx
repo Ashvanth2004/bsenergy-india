@@ -9,26 +9,26 @@ export default function ServicesSection() {
   const getServiceIcon = (index: number) => {
     switch (index) {
       case 0:
-        return <Wrench className="w-6 h-6 text-[#FF6B00]" />;
+        return <Wrench className="w-6 h-6 text-[#9E1218]" />;
       case 1:
-        return <Settings className="w-6 h-6 text-[#FF6B00]" />;
+        return <Settings className="w-6 h-6 text-[#9E1218]" />;
       case 2:
-        return <ShieldAlert className="w-6 h-6 text-[#FF6B00]" />;
+        return <ShieldAlert className="w-6 h-6 text-[#9E1218]" />;
       case 3:
-        return <Compass className="w-6 h-6 text-[#FF6B00]" />;
+        return <Compass className="w-6 h-6 text-[#9E1218]" />;
       default:
-        return <FileText className="w-6 h-6 text-[#FF6B00]" />;
+        return <FileText className="w-6 h-6 text-[#9E1218]" />;
     }
   };
 
   return (
-    <section id="services" className="py-24 bg-[#08101C] relative border-b border-white/10">
+    <section id="services" className="py-24 bg-[#0A0203] relative border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         
         {/* Section Header */}
         <div className="space-y-3 mb-16">
-          <div className="tech-label flex items-center gap-2">
-            <span className="w-1.5 h-1.5 bg-[#FF6B00]" />
+          <div className="tech-label flex items-center gap-2 text-[#CBD5E1]">
+            <span className="w-1.5 h-1.5 bg-[#9E1218]" />
             03 / INDUSTRIAL SERVICES
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
@@ -47,22 +47,22 @@ export default function ServicesSection() {
               href={buildWhatsAppLink(whatsappMessages.fabrication)}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block bg-[#0F1D30] hover:bg-[#162438] border border-white/10 hover:border-[#FF6B00]/40 rounded-sm p-6 lg:p-8 transition-all duration-300 relative overflow-hidden"
+              className="group block bg-[#160608] hover:bg-[#1C080B] border border-white/10 hover:border-[#9E1218]/50 rounded-sm p-6 lg:p-8 transition-all duration-300 relative overflow-hidden"
             >
-              {/* Expanding Orange Accent Line on Left */}
-              <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#FF6B00]/20 group-hover:w-2 group-hover:bg-[#FF6B00] transition-all duration-300" />
+              {/* Expanding Maroon Accent Line on Left */}
+              <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#9E1218]/30 group-hover:w-2 group-hover:bg-[#9E1218] transition-all duration-300" />
 
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center pl-2">
                 
                 {/* Left Number & Icon */}
                 <div className="lg:col-span-4 flex items-center gap-4">
-                  <span className="text-3xl lg:text-4xl font-extrabold font-mono text-[#FF6B00]">
+                  <span className="text-3xl lg:text-4xl font-extrabold font-mono text-[#9E1218]">
                     {service.number}
                   </span>
-                  <div className="p-3 bg-white/5 border border-white/10 rounded-sm group-hover:border-[#FF6B00]/50 transition-colors">
+                  <div className="p-3 bg-white/5 border border-white/10 rounded-sm group-hover:border-[#9E1218]/50 transition-colors">
                     {getServiceIcon(index)}
                   </div>
-                  <h3 className="text-lg lg:text-xl font-extrabold text-white group-hover:text-[#FF6B00] transition-colors tracking-tight">
+                  <h3 className="text-lg lg:text-xl font-extrabold text-white group-hover:text-[#9E1218] transition-colors tracking-tight">
                     {service.title}
                   </h3>
                 </div>
@@ -75,7 +75,7 @@ export default function ServicesSection() {
                   <div className="flex flex-wrap gap-3 text-xs font-mono text-gray-400 pt-1">
                     {service.features.map((feat, i) => (
                       <span key={i} className="flex items-center gap-1">
-                        <span className="text-[#FF6B00]">✓</span> {feat}
+                        <span className="text-[#9E1218]">✓</span> {feat}
                       </span>
                     ))}
                   </div>
@@ -83,7 +83,7 @@ export default function ServicesSection() {
 
                 {/* Right Hover Arrow */}
                 <div className="lg:col-span-2 flex items-center justify-end">
-                  <div className="w-10 h-10 rounded-sm bg-white/5 group-hover:bg-[#FF6B00] border border-white/10 group-hover:border-[#FF6B00] flex items-center justify-center text-white group-hover:text-black transition-all duration-300">
+                  <div className="w-10 h-10 rounded-sm bg-white/5 group-hover:bg-[#9E1218] border border-white/10 group-hover:border-[#9E1218] flex items-center justify-center text-white transition-all duration-300">
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>

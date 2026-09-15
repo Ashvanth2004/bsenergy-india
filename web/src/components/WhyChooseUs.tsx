@@ -2,13 +2,13 @@ import { WHY_CHOOSE_US_DATA } from "@/data/siteData";
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 bg-[#08101C] relative border-b border-white/10">
+    <section className="py-24 bg-[#0A0203] relative border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         
         {/* Section Header */}
         <div className="space-y-3 mb-16">
-          <div className="tech-label flex items-center gap-2">
-            <span className="w-1.5 h-1.5 bg-[#FF6B00]" />
+          <div className="tech-label flex items-center gap-2 text-[#CBD5E1]">
+            <span className="w-1.5 h-1.5 bg-[#9E1218]" />
             05 / WHY CHOOSE US
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
@@ -24,14 +24,14 @@ export default function WhyChooseUs() {
           {WHY_CHOOSE_US_DATA.map((item) => (
             <div
               key={item.number}
-              className="p-8 border-r border-b border-white/10 bg-[#0F1D30]/40 hover:bg-[#0F1D30] transition-colors group relative space-y-4"
+              className="p-8 border-r border-b border-white/10 bg-[#160608]/40 hover:bg-[#160608] transition-colors group relative space-y-4"
             >
               {/* Top blueprint reticle */}
-              <div className="text-4xl font-black font-mono text-[#FF6B00]/40 group-hover:text-[#FF6B00] transition-colors">
+              <div className="text-4xl font-black font-mono text-[#9E1218]/40 group-hover:text-[#9E1218] transition-colors">
                 {item.number}
               </div>
 
-              <h3 className="text-lg font-extrabold text-white tracking-wider uppercase font-mono group-hover:text-[#FF6B00] transition-colors">
+              <h3 className="text-lg font-extrabold text-white tracking-wider uppercase font-mono group-hover:text-[#9E1218] transition-colors">
                 {item.title}
               </h3>
 
@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
               </p>
 
               {/* Accent bottom line */}
-              <div className="w-0 group-hover:w-full h-[2px] bg-[#FF6B00] transition-all duration-300" />
+              <div className="w-0 group-hover:w-full h-[2px] bg-[#9E1218] transition-all duration-300" />
             </div>
           ))}
         </div>

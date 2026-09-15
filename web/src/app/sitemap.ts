@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 import { PRODUCTS_DATA } from "@/data/siteData";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://bsenergy-india.com";
 
